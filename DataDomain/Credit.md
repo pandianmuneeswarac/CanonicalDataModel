@@ -1,8 +1,33 @@
-# Business Unit: Credit
+# Business Unit Analysis: Credit
 
-## Source System Analysis
+## Source System Details
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|----------------------|
-| Credit | Codefi | Credit decisioning and portfolio management platform managing credit risk, scoring, and lending decisions. | • CreditDecision<br>• Applicant<br>• CreditScore<br>• RiskRating<br>• Policy<br>• Rule<br>• Model<br>• Portfolio<br>• Exposure<br>• Limit<br>• Utilization<br>• Delinquency<br>• Default<br>• Loss<br>• Provision<br>• Monitoring<br>• Alert<br>• Review<br>• Approval<br>• Override<br>• Exception<br>• Report<br>• Analytics<br>• Performance<br>• Compliance | 16 |
-| Credit | Moodys | Credit rating and risk assessment system providing credit analysis, ratings, and financial risk evaluation. | • Rating<br>• CreditAnalysis<br>• RiskAssessment<br>• Entity<br>• Issuer<br>• Instrument<br>• Sector<br>• Industry<br>• FinancialMetric<br>• RatioAnalysis<br>• Outlook<br>• WatchList<br>• Downgrade<br>• Upgrade<br>• Default<br>• Probability<br>• Model<br>• Methodology<br>• Report<br>• Research | 3 |
+| Business Unit | Source System Name | System Functionality | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|
+| Credit | Codefi | Credit decisioning and workflow automation platform for loan underwriting and approval. | 16 |
+| Credit | Moodys | Credit risk analytics and rating system for portfolio risk assessment and monitoring. | 3 |
+
+### Codefi - Top 20-25 Key Entity Names:
+
+- CreditApplication
+- Applicant
+- CreditDecision
+- UnderwritingRule
+- DecisionWorkflow
+- CreditPolicy
+- RiskScore
+- ApprovalLimit
+- DecisionEngine
+- CreditCondition
+- Stipulation
+- UnderwritingCriteria
+- AutomatedDecision
+- ManualReview
+- DecisionOverride
+- CreditApproval
+
+### Moodys - Top 20-25 Key Entity Names:
+
+- RiskRating
+- CreditAnalysis
+- PortfolioRisk

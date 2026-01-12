@@ -1,97 +1,134 @@
 # Business Unit Analysis: Commercial
 
-## Source System Details
+## Business Unit: Commercial
 
-| Business Unit | Source System Name | System Functionality | Total Number of Tables |
-|--------------|-------------------|---------------------|------------------------|
-| Commercial | Aspire (Leasing) | Equipment leasing management system for commercial lease origination, servicing, and portfolio management. | 17 |
-| Commercial | Cadence | Commercial banking platform for relationship management, credit analysis, and loan origination. | 81 |
-| Commercial | Epiq | Bankruptcy and restructuring management system for commercial loan workouts and legal proceedings. | 8 |
-| Commercial | Salesforce | Customer relationship management system for commercial banking sales, pipeline, and client engagement. | 1,773 |
+---
 
-### Aspire (Leasing) - Top 20-25 Key Entity Names:
+### Source System: Aspire (Leasing)
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Commercial |
+| **Source System Name** | Aspire (Leasing) |
+| **System Functionality** | Manages commercial equipment leasing, lease contracts, payment schedules, and asset financing. |
+| **Total Number of Tables** | 17 |
+
+#### Top 20-25 Key Entity Names:
 
 - Lease
 - Lessee
 - Equipment
-- LeaseContract
-- Payment
 - Asset
+- Contract
+- Payment
+- Schedule
+- Invoice
 - Vendor
-- LeaseSchedule
-- Residual Value
-- Depreciation
-- MaintenanceAgreement
-- Insurance
-- LeaseTermination
-- LeaseRenewal
-- InvoiceBilling
-- CollateralManagement
-- LeaseAccounting
-
-### Cadence - Top 20-25 Key Entity Names:
-
-- CommercialLoan
-- Customer
-- Relationship
-- CreditFacility
 - Collateral
-- Covenant
-- FinancialStatement
-- CreditAnalysis
-- RiskRating
-- LoanOrigination
-- Commitment
-- DrawDown
-- Repayment
-- InterestAccrual
-- FeeStructure
+- Depreciation
+- Residual
+- TerminationOption
+- RenewalOption
+- MaintenanceAgreement
+- InsurancePolicy
+- LateCharge
+
+---
+
+### Source System: Cadence
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Commercial |
+| **Source System Name** | Cadence |
+| **System Functionality** | Commercial banking platform managing business accounts, commercial loans, credit facilities, and relationship management. |
+| **Total Number of Tables** | 81 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- Account
+- Loan
+- CreditFacility
+- Transaction
+- Payment
+- Collateral
 - Guarantor
-- LoanDocument
-- ComplianceCheck
-- LoanReview
-- Portfolio
+- Covenant
+- Relationship
+- Product
+- Service
+- Fee
+- Interest
+- Balance
+- Statement
+- CreditLine
+- DrawRequest
+- Repayment
+- Default
+- Restructuring
+- RiskRating
 - Industry
 - BusinessSegment
 - RelationshipManager
-- CreditApproval
-- LoanServicing
 
-### Epiq - Top 20-25 Key Entity Names:
+---
+
+### Source System: Epiq
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Commercial |
+| **Source System Name** | Epiq |
+| **System Functionality** | Bankruptcy and legal case management for commercial loan workouts and distressed asset management. |
+| **Total Number of Tables** | 8 |
+
+#### Top 20-25 Key Entity Names:
 
 - BankruptcyCase
 - Debtor
 - Creditor
 - Claim
 - Asset
-- Restructuring
+- Liability
 - CourtFiling
-- LegalProceeding
+- Trustee
 
-### Salesforce - Top 20-25 Key Entity Names:
+---
+
+### Source System: Salesforce
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Commercial |
+| **Source System Name** | Salesforce |
+| **System Functionality** | Customer relationship management for commercial banking sales, pipeline, opportunities, and client interactions. |
+| **Total Number of Tables** | 1,773 |
+
+#### Top 20-25 Key Entity Names:
 
 - Account
 - Contact
-- Opportunity
 - Lead
-- Campaign
+- Opportunity
 - Case
+- Campaign
+- Activity
 - Task
 - Event
 - Product
-- PriceBook
 - Quote
 - Contract
 - Order
-- Pipeline
-- SalesStage
+- User
 - Territory
+- Forecast
+- Pipeline
+- Stage
+- Probability
+- Revenue
+- CloseDate
+- Owner
 - Team
-- Activity
 - Note
 - Attachment
-- EmailMessage
-- Report
-- Dashboard
-- Forecast
-- RelationshipHierarchy

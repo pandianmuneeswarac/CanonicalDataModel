@@ -1,7 +1,35 @@
-# Business Unit: AAS
+# Business Unit Analysis: AAS
 
-## Source System Analysis
+## Source System Details
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|----------------------|
-| AAS | ALF | Automated Lending Framework managing loan origination, underwriting, servicing, and portfolio analytics. | • Loan<br>• Borrower<br>• Application<br>• Collateral<br>• Underwriting<br>• CreditScore<br>• LoanProduct<br>• Payment<br>• Servicing<br>• Portfolio<br>• Interest<br>• Amortization<br>• Document<br>• Approval<br>• Disbursement<br>• Covenant<br>• Guarantor<br>• LoanOfficer<br>• RiskRating<br>• Delinquency | 68 |
+| Business Unit | Source System Name | System Functionality | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|
+| AAS | ALF | Asset and liability management system for financial risk analysis and regulatory reporting. | 68 |
+
+### Top 20-25 Key Entity Names:
+
+- Asset
+- Liability
+- Portfolio
+- RiskMeasure
+- InterestRate
+- Maturity
+- CashFlow
+- Hedge
+- Derivative
+- Security
+- Position
+- ValuationModel
+- Scenario
+- StressTest
+- LiquidityRatio
+- CapitalRequirement
+- RegulatoryReport
+- MarketData
+- Counterparty
+- CollateralAgreement
+- RiskLimit
+- ExposureCalculation
+- NetInterestIncome
+- DurationGap
+- ALMReport

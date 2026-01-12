@@ -1,52 +1,78 @@
 # Business Unit Analysis: Accounting & Finance
 
-## Source System Details
+## Business Unit: Accounting & Finance
 
-| Business Unit | Source System Name | System Functionality | Total Number of Tables |
-|--------------|-------------------|---------------------|------------------------|
-| Accounting & Finance | Access Data | Data access and reporting tool for financial data extraction and analysis. | 6 |
-| Accounting & Finance | CashSuite | Cash management system for treasury operations, liquidity management, and payment processing. | 37 |
-| Accounting & Finance | COA | Chart of accounts management system for general ledger and financial reporting structure. | 38 |
-| Accounting & Finance | Oracle | Enterprise resource planning system for financial accounting, reporting, and compliance management. | 5 |
+---
 
-### Access Data - Top 20-25 Key Entity Names:
+### Source System: Access Data
 
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Accounting & Finance |
+| **Source System Name** | Access Data |
+| **System Functionality** | Manages financial data access, reporting databases, and ad-hoc financial analysis queries. |
+| **Total Number of Tables** | 6 |
+
+#### Top 20-25 Key Entity Names:
+
+- FinancialReport
+- DataQuery
+- ReportTemplate
+- UserAccess
+- AuditLog
 - DataSource
-- Query
-- Report
-- DataExtract
-- AccessLog
-- User
 
-### CashSuite - Top 20-25 Key Entity Names:
+---
+
+### Source System: CashSuite
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Accounting & Finance |
+| **Source System Name** | CashSuite |
+| **System Functionality** | Manages cash management, liquidity, treasury operations, payments, and cash flow forecasting. |
+| **Total Number of Tables** | 37 |
+
+#### Top 20-25 Key Entity Names:
 
 - CashAccount
-- CashPosition
-- Payment
 - Transaction
-- LiquidityForecast
+- Payment
+- Receipt
+- CashPosition
+- Liquidity
+- ForecastModel
+- TreasuryOperation
 - BankAccount
-- CashFlow
-- TreasuryDeal
-- Settlement
+- Transfer
 - Reconciliation
-- FundTransfer
-- InvestmentInstrument
-- InterestCalculation
-- CurrencyExchange
-- CounterpartyBank
-- PaymentInstruction
-- CashPooling
-- BalanceReport
-- TreasuryLedger
-- CashManagementRule
-- LiquidityRatio
-- FundingSource
-- CashBudget
-- TreasuryPosition
-- WorkingCapital
+- CashFlow
+- InvestmentSweep
+- InterestRate
+- Fee
+- Currency
+- ExchangeRate
+- Settlement
+- Counterparty
+- LiquidityPool
+- CashConcentration
+- WireTransfer
+- ACHTransaction
+- CheckPayment
+- DailyBalance
 
-### COA - Top 20-25 Key Entity Names:
+---
+
+### Source System: COA
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Accounting & Finance |
+| **Source System Name** | COA |
+| **System Functionality** | Manages chart of accounts, general ledger structure, account hierarchies, and financial classifications. |
+| **Total Number of Tables** | 38 |
+
+#### Top 20-25 Key Entity Names:
 
 - Account
 - AccountHierarchy
@@ -56,28 +82,39 @@
 - AccountCategory
 - CostCenter
 - Department
-- BusinessUnit
+- Division
+- Entity
 - AccountMapping
-- AccountBalance
 - FinancialStatement
-- TrialBalance
+- BalanceSheet
+- IncomeStatement
 - AccountSegment
-- AccountDimension
-- AccountGroup
-- AccountClassification
-- LedgerEntry
-- AccountPeriod
-- FiscalYear
+- NaturalAccount
 - AccountAttribute
+- AccountStatus
+- FiscalPeriod
+- FiscalYear
+- AccountValidation
+- AccountRule
 - ConsolidationRule
 - IntercompanyAccount
-- AccountVersion
-- AccountStructure
+- EliminationEntry
 
-### Oracle - Top 20-25 Key Entity Names:
+---
+
+### Source System: Oracle
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Accounting & Finance |
+| **Source System Name** | Oracle |
+| **System Functionality** | Enterprise resource planning for financial accounting, budgeting, procurement, and financial reporting. |
+| **Total Number of Tables** | 5 |
+
+#### Top 20-25 Key Entity Names:
 
 - GeneralLedger
-- Journal
-- AccountBalance
-- FinancialPeriod
-- LedgerEntry
+- JournalEntry
+- AccountsPayable
+- AccountsReceivable
+- Budget

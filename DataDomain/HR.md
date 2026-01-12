@@ -1,8 +1,48 @@
-# Business Unit: HR
+# Business Unit Analysis: HR (Human Resources)
 
-## Source System Analysis
+## Business Unit: HR
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|------------------------|
-| HR | HR | Manages human resources information and employee data. | - Employee<br>- Department<br>- Position<br>- Salary<br>- Benefit<br>- Leave<br>- Performance<br>- Training | 8 |
-| HR | Workday | Manages enterprise human capital management and workforce planning. | - Worker<br>- Position<br>- Organization<br>- Job<br>- Compensation<br>- Benefits<br>- TimeTracking<br>- Absence<br>- Performance | 9 |
+---
+
+### Source System: HR
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | HR |
+| **Source System Name** | HR |
+| **System Functionality** | Human resources management system for employee data, payroll, benefits, and HR operations. |
+| **Total Number of Tables** | 8 |
+
+#### Top 20-25 Key Entity Names:
+
+- Employee
+- Position
+- Department
+- Compensation
+- Benefit
+- Payroll
+- TimeOff
+- PerformanceReview
+
+---
+
+### Source System: Workday
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | HR |
+| **Source System Name** | Workday |
+| **System Functionality** | Enterprise cloud platform for human capital management, payroll, benefits, talent, and workforce planning. |
+| **Total Number of Tables** | 9 |
+
+#### Top 20-25 Key Entity Names:
+
+- Worker
+- Position
+- Organization
+- Compensation
+- Benefit
+- Payroll
+- Absence
+- Performance
+- Talent

@@ -1,8 +1,48 @@
-# Business Unit: Legal
+# Business Unit Analysis: Legal
 
-## Source System Analysis
+## Source System Details
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|----------------------|
-| Legal | Legal Tracker | Legal matter management system tracking cases, litigation, contracts, and legal spend across organization. | • Matter<br>• Case<br>• Litigation<br>• Contract<br>• Party<br>• Attorney<br>• LawFirm<br>• Invoice<br>• Expense<br>• Budget<br>• Task<br>• Milestone<br>• Document<br>• Correspondence<br>• Hearing<br>• Filing<br>• Deadline<br>• Status<br>• Outcome<br>• Settlement<br>• Judgment<br>• Appeal<br>• Risk<br>• Compliance<br>• Report | 36 |
-| Legal | PACER | Public Access to Court Electronic Records system accessing federal court documents and case information. | • Case<br>• Docket<br>• Filing<br>• Document<br>• Party<br>• Attorney<br>• Court<br>• Judge<br>• Hearing<br>• Order<br>• Motion<br>• Pleading<br>• Judgment<br>• Appeal<br>• Status<br>• Date<br>• Fee<br>• Access<br>• Search<br>• Download | 9 |
+| Business Unit | Source System Name | System Functionality | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|
+| Legal | Legal Tracker | Legal matter management system for case tracking, litigation management, and legal spend. | 36 |
+| Legal | PACER | Public Access to Court Electronic Records for federal court case information and documents. | 9 |
+
+### Legal Tracker - Top 20-25 Key Entity Names:
+
+- LegalMatter
+- Case
+- Attorney
+- LawFirm
+- Invoice
+- TimeEntry
+- Expense
+- Budget
+- LegalHold
+- Document
+- Litigation
+- Contract
+- Dispute
+- Settlement
+- CourtFiling
+- Hearing
+- Deposition
+- Discovery
+- Judgment
+- Appeal
+- LegalCost
+- BillingRate
+- MatterStatus
+- CaseOutcome
+- LegalSpend
+
+### PACER - Top 20-25 Key Entity Names:
+
+- CourtCase
+- Docket
+- Filing
+- Party
+- Attorney
+- Judge
+- CourtDocument
+- CaseStatus
+- Hearing

@@ -1,9 +1,55 @@
-# Business Unit: Compliance
+# Business Unit Analysis: Compliance
 
-## Source System Analysis
+## Source System Details
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|----------------------|
-| Compliance | Archer | Governance, risk, and compliance platform managing policies, controls, assessments, and regulatory compliance programs. | • Risk<br>• Control<br>• Policy<br>• Assessment<br>• Issue<br>• Incident<br>• Audit<br>• Finding<br>• Remediation<br>• Regulation<br>• Requirement<br>• Framework<br>• Questionnaire<br>• Response<br>• Evidence<br>• Document<br>• Workflow<br>• Approval<br>• Review<br>• Monitoring<br>• Report<br>• Dashboard<br>• Action<br>• Owner<br>• Status | 2344 |
-| Compliance | DDC | Due diligence and compliance system managing customer screening, monitoring, and regulatory compliance checks. | • Customer<br>• Screening<br>• Watchlist<br>• Alert<br>• Case<br>• Investigation<br>• RiskScore<br>• Sanction<br>• PEP<br>• AdverseMedia<br>• Review<br>• Disposition<br>• Evidence<br>• Document<br>• Monitoring<br>• Report<br>• AuditTrail<br>• Regulation<br>• Policy<br>• Workflow | 8 |
-| Compliance | Fincen | Financial Crimes Enforcement Network reporting system managing suspicious activity reports and regulatory filings. | • SuspiciousActivityReport<br>• Transaction<br>• Customer<br>• Account<br>• Activity<br>• Filing<br>• Narrative<br>• Subject<br>• Institution<br>• ContactInformation<br>• FinancialInstitution<br>• SuspiciousActivity<br>• ReportingPeriod<br>• Status<br>• Submission<br>• Acknowledgment<br>• Correction<br>• Amendment<br>• Validation<br>• AuditLog | 4 |
+| Business Unit | Source System Name | System Functionality | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|
+| Compliance | Archer | Governance, risk, and compliance platform for regulatory management and enterprise risk assessment. | 2,344 |
+| Compliance | DDC | Due diligence and compliance system for customer screening, KYC, and risk assessment. | 8 |
+| Compliance | Fincen | Financial crimes enforcement network reporting system for suspicious activity and regulatory filing. | 4 |
+
+### Archer - Top 20-25 Key Entity Names:
+
+- RiskAssessment
+- Control
+- Policy
+- Regulation
+- Compliance Obligation
+- Incident
+- Issue
+- Finding
+- Audit
+- RiskRegister
+- ControlTest
+- Remediation
+- RiskIndicator
+- ComplianceReport
+- RegulatoryChange
+- BusinessProcess
+- RiskOwner
+- ControlOwner
+- RiskMitigation
+- ComplianceProgram
+- PolicyException
+- RiskScore
+- ControlEffectiveness
+- AuditTrail
+- GovernanceFramework
+
+### DDC - Top 20-25 Key Entity Names:
+
+- Customer
+- DueDiligenceCheck
+- KYCDocument
+- ScreeningResult
+- RiskRating
+- ComplianceReview
+- IdentityVerification
+- BackgroundCheck
+
+### Fincen - Top 20-25 Key Entity Names:
+
+- SuspiciousActivityReport
+- Transaction
+- Filing
+- RegulatoryReport

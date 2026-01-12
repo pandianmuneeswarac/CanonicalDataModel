@@ -1,0 +1,10 @@
+# Business Unit: Accounting & Finance
+
+## Source System Analysis
+
+| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
+|--------------|-------------------|---------------------|---------------------------|----------------------|
+| Accounting & Finance | Access Data | Financial data access and reporting system for accounting operations and financial analysis. | • Account<br>• Transaction<br>• JournalEntry<br>• Ledger<br>• FinancialReport<br>• Budget<br>• CostCenter<br>• Expense<br>• Revenue<br>• Asset<br>• Liability<br>• Equity<br>• Period<br>• FiscalYear<br>• Reconciliation<br>• AuditTrail<br>• Allocation<br>• Accrual<br>• Variance<br>• Forecast | 6 |
+| Accounting & Finance | CashSuite | Cash management system handling liquidity, payments, receipts, and treasury operations for banking. | • Customer<br>• Account<br>• Transaction<br>• Deposit<br>• Loan<br>• Payment<br>• Branch<br>• Product<br>• InterestRate<br>• Fee<br>• Card<br>• Statement<br>• Balance<br>• CashPosition<br>• Treasury<br>• Liquidity<br>• Settlement<br>• Clearing<br>• Reconciliation<br>• CashFlow | 37 |
+| Accounting & Finance | COA | Chart of Accounts system managing account structure, hierarchy, and financial classification framework. | • Account<br>• AccountHierarchy<br>• AccountType<br>• AccountCategory<br>• SubAccount<br>• GLAccount<br>• CostCenter<br>• Department<br>• Division<br>• Entity<br>• AccountMapping<br>• AccountGroup<br>• FinancialStatement<br>• ReportingLine<br>• Segment<br>• AccountAttribute<br>• AccountRule<br>• AccountValidation<br>• AccountVersion<br>• AccountStatus | 38 |
+| Accounting & Finance | Oracle | Enterprise financial management system for accounting, reporting, consolidation, and financial operations. | • GeneralLedger<br>• Account<br>• Transaction<br>• JournalEntry<br>• SubLedger<br>• FinancialPeriod<br>• Budget<br>• Consolidation<br>• IntercompanyTransaction<br>• CostCenter<br>• FixedAsset<br>• Depreciation<br>• AccountsPayable<br>• AccountsReceivable<br>• CashManagement<br>• FinancialReport<br>• Currency<br>• ExchangeRate<br>• TaxCode<br>• AuditTrail | 5 |

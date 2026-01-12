@@ -1,33 +1,8 @@
-# Business Unit Analysis: Credit
+# Business Unit: Credit
 
-## Source System Details
+## Source System Analysis
 
-| Business Unit | Source System Name | System Functionality | Total Number of Tables |
-|--------------|-------------------|---------------------|------------------------|
-| Credit | Codefi | Credit decisioning and workflow automation platform for loan underwriting and approval. | 16 |
-| Credit | Moodys | Credit risk analytics and rating system for portfolio risk assessment and monitoring. | 3 |
-
-### Codefi - Top 20-25 Key Entity Names:
-
-- CreditApplication
-- Applicant
-- CreditDecision
-- UnderwritingRule
-- DecisionWorkflow
-- CreditPolicy
-- RiskScore
-- ApprovalLimit
-- DecisionEngine
-- CreditCondition
-- Stipulation
-- UnderwritingCriteria
-- AutomatedDecision
-- ManualReview
-- DecisionOverride
-- CreditApproval
-
-### Moodys - Top 20-25 Key Entity Names:
-
-- RiskRating
-- CreditAnalysis
-- PortfolioRisk
+| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
+|--------------|-------------------|---------------------|---------------------------|------------------------|
+| Credit | Codefi | Manages credit decisioning and financial intelligence platform. | - CreditApplication<br>- Borrower<br>- CreditScore<br>- CreditReport<br>- Decision<br>- RiskModel<br>- Underwriting<br>- Policy<br>- Rule<br>- Condition<br>- Approval<br>- Decline<br>- RiskRating<br>- CreditLimit<br>- DebtToIncome<br>- CollateralValue | 16 |
+| Credit | Moodys | Manages credit risk analytics and rating services integration. | - RiskRating<br>- CreditAnalysis<br>- RiskMetrics | 3 |

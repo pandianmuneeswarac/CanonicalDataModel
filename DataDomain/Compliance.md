@@ -1,82 +1,9 @@
-# Business Unit Analysis: Compliance
+# Business Unit: Compliance
 
-## Business Unit: Compliance
+## Source System Analysis
 
----
-
-### Source System: Archer
-
-| Attribute | Details |
-|-----------|----------|
-| **Business Unit Name** | Compliance |
-| **Source System Name** | Archer |
-| **System Functionality** | Governance, risk, and compliance platform managing regulatory compliance, risk assessments, and audit workflows. |
-| **Total Number of Tables** | 2,344 |
-
-#### Top 20-25 Key Entity Names:
-
-- Risk
-- Control
-- Assessment
-- Issue
-- Incident
-- Policy
-- Regulation
-- Audit
-- Finding
-- Remediation
-- Compliance
-- Framework
-- Requirement
-- Evidence
-- Attestation
-- Exception
-- Mitigation
-- RiskOwner
-- ControlOwner
-- RiskRating
-- ControlEffectiveness
-- ComplianceStatus
-- RegulatoryChange
-- Questionnaire
-- Workflow
-
----
-
-### Source System: DDC
-
-| Attribute | Details |
-|-----------|----------|
-| **Business Unit Name** | Compliance |
-| **Source System Name** | DDC |
-| **System Functionality** | Due diligence and compliance verification for customer onboarding and ongoing monitoring. |
-| **Total Number of Tables** | 8 |
-
-#### Top 20-25 Key Entity Names:
-
-- Customer
-- DueDiligence
-- Verification
-- Document
-- CheckResult
-- RiskScore
-- ComplianceStatus
-- ReviewDate
-
----
-
-### Source System: Fincen
-
-| Attribute | Details |
-|-----------|----------|
-| **Business Unit Name** | Compliance |
-| **Source System Name** | Fincen |
-| **System Functionality** | Financial Crimes Enforcement Network reporting for suspicious activity and currency transaction reporting. |
-| **Total Number of Tables** | 4 |
-
-#### Top 20-25 Key Entity Names:
-
-- SuspiciousActivityReport
-- CurrencyTransactionReport
-- Filing
-- Transaction
+| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
+|--------------|-------------------|---------------------|---------------------------|------------------------|
+| Compliance | Archer | Manages enterprise governance, risk, and compliance operations. | - Risk<br>- Control<br>- Issue<br>- Incident<br>- Policy<br>- Regulation<br>- Assessment<br>- Audit<br>- Finding<br>- Remediation<br>- ComplianceObligation<br>- RiskRegister<br>- ControlTest<br>- RiskAssessment<br>- ComplianceReport<br>- Violation<br>- Exception<br>- Mitigation<br>- RiskOwner<br>- ControlOwner<br>- RiskCategory<br>- RiskRating<br>- ComplianceMetric<br>- RegulatoryRequirement<br>- AuditTrail | 2,344 |
+| Compliance | DDC | Manages due diligence and compliance documentation. | - Customer<br>- Document<br>- DueDiligence<br>- Verification<br>- ComplianceCheck<br>- RiskAssessment<br>- KYC<br>- AML | 8 |
+| Compliance | Fincen | Manages Financial Crimes Enforcement Network reporting and suspicious activity monitoring. | - SuspiciousActivity<br>- Transaction<br>- Report<br>- Filing | 4 |

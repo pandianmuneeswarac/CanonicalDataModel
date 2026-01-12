@@ -1,12 +1,186 @@
-# Business Unit: Marketing
+# Business Unit Analysis: Marketing
 
-## Source System Analysis
+## Business Unit: Marketing
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|------------------------|
-| Marketing | ACX | Manages automated customer experience and journey orchestration. | - Customer<br>- Journey<br>- Touchpoint<br>- Campaign<br>- Interaction<br>- Channel<br>- Event<br>- Response<br>- Segment<br>- Message<br>- Trigger<br>- Workflow<br>- Engagement<br>- Experience<br>- Personalization | 15 |
-| Marketing | Datamyx | Manages marketing data analytics and customer insights. | - Customer<br>- Campaign<br>- Segment<br>- Analytics<br>- Metric<br>- KPI<br>- Behavior<br>- Trend<br>- Insight<br>- Report<br>- Dashboard<br>- DataModel<br>- Dimension<br>- Fact<br>- Measure<br>- Prediction<br>- Score<br>- Attribution | 18 |
-| Marketing | DNC | Manages do-not-call registry and compliance. | - DoNotCall | 1 |
-| Marketing | GA4 | Manages Google Analytics 4 web and app analytics integration. | - Event<br>- User<br>- Session<br>- Page<br>- Screen<br>- Conversion<br>- Goal<br>- Audience<br>- Dimension<br>- Metric<br>- Campaign<br>- Source<br>- Medium<br>- Channel<br>- Device<br>- Geography<br>- Behavior<br>- Engagement<br>- Retention<br>- Attribution<br>- Funnel<br>- Path<br>- Ecommerce<br>- Transaction<br>- Revenue | 34 |
-| Marketing | Interaction Studio | Manages real-time personalization and customer interaction management. | - Visitor<br>- Session<br>- Event<br>- Campaign<br>- Experience<br>- Segment<br>- Recommendation<br>- Content<br>- Offer<br>- Touchpoint<br>- Channel<br>- Interaction<br>- Behavior<br>- Profile<br>- Attribute<br>- Affinity<br>- Intent<br>- Engagement<br>- Conversion<br>- Journey<br>- Personalization<br>- ABTest<br>- Rule<br>- Trigger<br>- Response | 121 |
-| Marketing | MarketingCloud | Manages multi-channel marketing automation and campaign management. | - Campaign<br>- Journey<br>- Email<br>- SMS<br>- Push<br>- Subscriber<br>- Contact<br>- List<br>- Segment<br>- Content<br>- Template<br>- Send<br>- Delivery<br>- Open<br>- Click<br>- Bounce<br>- Unsubscribe<br>- Engagement<br>- Automation<br>- Workflow<br>- Trigger<br>- DataExtension<br>- Attribute<br>- Preference<br>- Suppression | 15 |
+---
+
+### Source System: ACX
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Marketing |
+| **Source System Name** | ACX |
+| **System Functionality** | Automated customer experience platform managing personalized interactions and journey orchestration. |
+| **Total Number of Tables** | 15 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- Journey
+- Touchpoint
+- Interaction
+- Campaign
+- Segment
+- Message
+- Channel
+- Event
+- Response
+- Engagement
+- Personalization
+- Content
+- Trigger
+- Workflow
+
+---
+
+### Source System: Datamyx
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Marketing |
+| **Source System Name** | Datamyx |
+| **System Functionality** | Marketing data integration and analytics platform consolidating customer data for insights. |
+| **Total Number of Tables** | 18 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- DataSource
+- Integration
+- Attribute
+- Segment
+- Metric
+- KPI
+- Dashboard
+- Report
+- Analysis
+- Trend
+- Behavior
+- Preference
+- Score
+- Model
+- Prediction
+- Campaign
+- Performance
+
+---
+
+### Source System: DNC
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Marketing |
+| **Source System Name** | DNC |
+| **System Functionality** | Do Not Call registry management ensuring compliance with telemarketing regulations. |
+| **Total Number of Tables** | 1 |
+
+#### Top 20-25 Key Entity Names:
+
+- PhoneNumber
+
+---
+
+### Source System: GA4
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Marketing |
+| **Source System Name** | GA4 |
+| **System Functionality** | Google Analytics 4 tracking website traffic, user behavior, conversions, and digital marketing performance. |
+| **Total Number of Tables** | 34 |
+
+#### Top 20-25 Key Entity Names:
+
+- User
+- Session
+- Event
+- PageView
+- Conversion
+- Goal
+- Campaign
+- Source
+- Medium
+- Channel
+- Device
+- Browser
+- Location
+- Audience
+- Segment
+- Funnel
+- Path
+- Engagement
+- Bounce
+- Duration
+- Transaction
+- Revenue
+- Product
+- Ecommerce
+- Attribution
+
+---
+
+### Source System: Interaction Studio
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Marketing |
+| **Source System Name** | Interaction Studio |
+| **System Functionality** | Real-time personalization engine delivering individualized experiences across channels based on customer behavior. |
+| **Total Number of Tables** | 121 |
+
+#### Top 20-25 Key Entity Names:
+
+- User
+- Interaction
+- Event
+- Session
+- Campaign
+- Experience
+- Personalization
+- Content
+- Recommendation
+- Segment
+- Attribute
+- Behavior
+- Action
+- Response
+- Engagement
+- Journey
+- Touchpoint
+- Channel
+- Message
+- Offer
+- ABTest
+- Variation
+- Conversion
+- Goal
+- Analytics
+
+---
+
+### Source System: MarketingCloud
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Marketing |
+| **Source System Name** | MarketingCloud |
+| **System Functionality** | Marketing automation platform managing email campaigns, customer journeys, segmentation, and multi-channel marketing. |
+| **Total Number of Tables** | 15 |
+
+#### Top 20-25 Key Entity Names:
+
+- Subscriber
+- Email
+- Campaign
+- Journey
+- Segment
+- List
+- Send
+- Open
+- Click
+- Bounce
+- Unsubscribe
+- Content
+- Template
+- Automation
+- Trigger

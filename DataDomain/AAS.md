@@ -1,40 +1,7 @@
-# Business Unit Analysis: AAS (Advisory and Asset Services)
+# Business Unit: AAS
 
-## Business Unit: AAS
+## Source System Analysis
 
-### Source System: ALF
-
-| Attribute | Details |
-|-----------|----------|
-| **Business Unit Name** | AAS |
-| **Source System Name** | ALF |
-| **System Functionality** | Manages investment portfolios, client accounts, asset allocation, advisory services, and wealth management operations. |
-| **Total Number of Tables** | 68 |
-
-#### Top 20-25 Key Entity Names:
-
-- Client
-- Account
-- Portfolio
-- Asset
-- Security
-- Transaction
-- Trade
-- Position
-- Allocation
-- Advisor
-- InvestmentStrategy
-- Performance
-- Benchmark
-- Fee
-- Commission
-- Custodian
-- MarketValue
-- CashFlow
-- Dividend
-- Interest
-- Rebalancing
-- RiskProfile
-- InvestmentObjective
-- AssetClass
-- Holding
+| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
+|--------------|-------------------|---------------------|---------------------------|------------------------|
+| AAS | ALF | Manages automated lending and loan fulfillment processes for financial institutions. | - Loan<br>- Borrower<br>- Application<br>- Document<br>- Collateral<br>- Underwriting<br>- Approval<br>- Disbursement<br>- LoanOfficer<br>- CreditScore<br>- Payment<br>- Interest<br>- Term<br>- LoanType<br>- AppraisalValue<br>- Insurance<br>- Servicing<br>- Compliance<br>- Condition<br>- Closing | 68 |

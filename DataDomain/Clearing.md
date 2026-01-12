@@ -1,10 +1,110 @@
-# Business Unit: Clearing
+# Business Unit Analysis: Clearing
 
-## Source System Analysis
+## Source System Details
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|----------------------|
-| Clearing | Clearing | Securities clearing and settlement system processing trades, custody, and back-office operations for broker-dealers. | • Trade<br>• Security<br>• Account<br>• Settlement<br>• Position<br>• Custody<br>• Client<br>• BrokerDealer<br>• Transaction<br>• ClearingFirm<br>• CashMovement<br>• SecurityMovement<br>• CorporateAction<br>• Dividend<br>• Interest<br>• Fee<br>• Commission<br>• Margin<br>• Collateral<br>• RegulatoryReport<br>• TradeConfirmation<br>• Reconciliation<br>• Counterparty<br>• SettlementInstruction<br>• NetPosition | 1391 |
-| Clearing | Cor Clearing | Core clearing platform managing trade processing, settlement, custody, and regulatory compliance for securities. | • Trade<br>• Security<br>• Account<br>• Client<br>• Settlement<br>• Position<br>• ClearingMember<br>• Transaction<br>• CashBalance<br>• SecurityBalance<br>• MarginRequirement<br>• Collateral<br>• RiskExposure<br>• CorporateAction<br>• Dividend<br>• Interest<br>• Fee<br>• Commission<br>• TradeConfirmation<br>• SettlementInstruction<br>• Reconciliation<br>• RegulatoryFiling<br>• Counterparty<br>• NetSettlement<br>• FailedTrade | 2181 |
-| Clearing | DMClearing | Data management clearing system supporting clearing operations data, reference data, and reporting functions. | • ReferenceData<br>• Security<br>• Account<br>• Client<br>• Trade<br>• Position<br>• Settlement<br>• DataQuality<br>• MasterData<br>• SecurityMaster<br>• ClientMaster<br>• AccountMaster<br>• PriceData<br>• MarketData<br>• CorporateAction<br>• DataMapping<br>• DataValidation<br>• DataLineage<br>• ReportingData<br>• AuditTrail | 13 |
-| Clearing | Jack Henry | Core banking platform providing account management, transaction processing, and customer service for retail banking. | • Customer<br>• Account<br>• Transaction<br>• Deposit<br>• Loan<br>• Payment<br>• Branch<br>• Product<br>• InterestRate<br>• Fee<br>• Card<br>• Statement<br>• Balance<br>• CheckProcessing<br>• ACHTransaction<br>• WireTransfer<br>• StopPayment<br>• Overdraft<br>• ServiceCharge<br>• AccountRelationship<br>• CustomerProfile<br>• Beneficiary<br>• AuthorizedSigner<br>• AccountHold<br>• TransactionHistory | 1284 |
+| Business Unit | Source System Name | System Functionality | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|
+| Clearing | Clearing | Securities clearing and settlement platform for broker-dealer trade processing and custody services. | 1,391 |
+| Clearing | Cor Clearing | Core clearing system for trade execution, settlement, and back-office operations management. | 2,181 |
+| Clearing | DMClearing | Data management system for clearing operations, reconciliation, and regulatory reporting. | 13 |
+| Clearing | Jack Henry | Integrated banking platform for clearing operations, account management, and transaction processing. | 1,284 |
+
+### Clearing - Top 20-25 Key Entity Names:
+
+- Trade
+- Settlement
+- Security
+- Account
+- Position
+- Client
+- BrokerDealer
+- ClearingMember
+- Transaction
+- CustodyAccount
+- MarginRequirement
+- CollateralManagement
+- TradeConfirmation
+- SettlementInstruction
+- CashMovement
+- SecurityTransfer
+- CorporateAction
+- Dividend
+- InterestAccrual
+- FailedTrade
+- Reconciliation
+- RegulatoryReport
+- FeeCalculation
+- NetSettlement
+- Counterparty
+
+### Cor Clearing - Top 20-25 Key Entity Names:
+
+- TradeOrder
+- Execution
+- Settlement
+- ClearingAccount
+- Position
+- Client
+- Security
+- MarginCall
+- CollateralPosting
+- RiskExposure
+- TradeCapture
+- SettlementCycle
+- CashBalance
+- SecurityHolding
+- TradeAllocation
+- BackOfficeOperation
+- TradeConfirmation
+- SettlementStatus
+- FailManagement
+- CorporateActionProcessing
+- DividendProcessing
+- TaxWithholding
+- FeeStructure
+- CommissionCalculation
+- RegulatoryFiling
+
+### DMClearing - Top 20-25 Key Entity Names:
+
+- DataReconciliation
+- ClearingData
+- TradeData
+- SettlementData
+- PositionData
+- AccountData
+- RegulatoryReport
+- DataQualityRule
+- ReconciliationBreak
+- DataValidation
+- AuditTrail
+- DataLineage
+- ReportingMetric
+
+### Jack Henry - Top 20-25 Key Entity Names:
+
+- Account
+- Customer
+- Transaction
+- ClearingTransaction
+- AccountBalance
+- Product
+- Service
+- Fee
+- InterestCalculation
+- Statement
+- Payment
+- Transfer
+- ACHTransaction
+- WireTransfer
+- CheckProcessing
+- DepositAccount
+- LoanAccount
+- Branch
+- Relationship
+- AccountHolder
+- TransactionHistory
+- BalanceInquiry
+- AccountMaintenance
+- RegulatoryCompliance
+- AuditLog

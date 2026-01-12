@@ -1,0 +1,11 @@
+# OCEO Business Unit - Source Systems Analysis
+
+## Business Unit: OCEO
+
+| Business Unit | Source System Name | System Functionality | Top 20 Key Entity Names | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|------------------------|
+| OCEO | iGrafx | Manages business process modeling, workflow optimization, and operational efficiency analysis. | • Process<br>• Activity<br>• Task<br>• Workflow<br>• ProcessModel<br>• Swimlane<br>• Gateway<br>• Event<br>• Connector<br>• Role<br>• Resource<br>• Metric<br>• KPI<br>• Simulation<br>• Analysis<br>• Optimization<br>• Documentation<br>• Version<br>• Repository<br>• Diagram | 46 |
+| OCEO | Visio | Manages diagram creation, process visualization, and organizational chart development. | • Diagram<br>• Shape<br>• Connector<br>• Page<br>• Layer<br>• Template<br>• Stencil<br>• Master<br>• Style<br>• Theme<br>• DataGraphic<br>• CustomProperty<br>• Hyperlink<br>• Comment<br>• Version<br>• Document<br>• Workspace<br>• Collaboration<br>• Export<br>• Print | 0 |
+| OCEO | ProcessMaker | Manages workflow automation, business process management, and digital transformation initiatives. | • Process<br>• Workflow<br>• Task<br>• Request<br>• Form<br>• Variable<br>• Script<br>• Trigger<br>• Gateway<br>• Event<br>• User<br>• Group<br>• Role<br>• Document<br>• Report<br>• Dashboard<br>• Integration<br>• API<br>• Notification<br>• Audit | 0 |
+| OCEO | Bizagi | Manages business process automation, case management, and digital workflow solutions. | • Process<br>• Case<br>• Activity<br>• Task<br>• Form<br>• Entity<br>• Attribute<br>• Rule<br>• Expression<br>• Gateway<br>• Event<br>• Participant<br>• Role<br>• Document<br>• Integration<br>• Connector<br>• Report<br>• Dashboard<br>• Version<br>• Environment | 0 |
+| OCEO | Signavio | Manages business process intelligence, collaboration, and continuous process improvement. | • Process<br>• Model<br>• Diagram<br>• Activity<br>• Event<br>• Gateway<br>• Collaboration<br>• Dictionary<br>• Glossary<br>• Metric<br>• KPI<br>• Simulation<br>• Analysis<br>• Optimization<br>• Workflow<br>• Approval<br>• Version<br>• Repository<br>• User<br>• Workspace | 0 |

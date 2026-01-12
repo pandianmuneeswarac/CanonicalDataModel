@@ -1,55 +1,82 @@
 # Business Unit Analysis: Compliance
 
-## Source System Details
+## Business Unit: Compliance
 
-| Business Unit | Source System Name | System Functionality | Total Number of Tables |
-|--------------|-------------------|---------------------|------------------------|
-| Compliance | Archer | Governance, risk, and compliance platform for regulatory management and enterprise risk assessment. | 2,344 |
-| Compliance | DDC | Due diligence and compliance system for customer screening, KYC, and risk assessment. | 8 |
-| Compliance | Fincen | Financial crimes enforcement network reporting system for suspicious activity and regulatory filing. | 4 |
+---
 
-### Archer - Top 20-25 Key Entity Names:
+### Source System: Archer
 
-- RiskAssessment
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Compliance |
+| **Source System Name** | Archer |
+| **System Functionality** | Governance, risk, and compliance platform managing regulatory compliance, risk assessments, and audit workflows. |
+| **Total Number of Tables** | 2,344 |
+
+#### Top 20-25 Key Entity Names:
+
+- Risk
 - Control
+- Assessment
+- Issue
+- Incident
 - Policy
 - Regulation
-- Compliance Obligation
-- Incident
-- Issue
-- Finding
 - Audit
-- RiskRegister
-- ControlTest
+- Finding
 - Remediation
-- RiskIndicator
-- ComplianceReport
-- RegulatoryChange
-- BusinessProcess
+- Compliance
+- Framework
+- Requirement
+- Evidence
+- Attestation
+- Exception
+- Mitigation
 - RiskOwner
 - ControlOwner
-- RiskMitigation
-- ComplianceProgram
-- PolicyException
-- RiskScore
+- RiskRating
 - ControlEffectiveness
-- AuditTrail
-- GovernanceFramework
+- ComplianceStatus
+- RegulatoryChange
+- Questionnaire
+- Workflow
 
-### DDC - Top 20-25 Key Entity Names:
+---
+
+### Source System: DDC
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Compliance |
+| **Source System Name** | DDC |
+| **System Functionality** | Due diligence and compliance verification for customer onboarding and ongoing monitoring. |
+| **Total Number of Tables** | 8 |
+
+#### Top 20-25 Key Entity Names:
 
 - Customer
-- DueDiligenceCheck
-- KYCDocument
-- ScreeningResult
-- RiskRating
-- ComplianceReview
-- IdentityVerification
-- BackgroundCheck
+- DueDiligence
+- Verification
+- Document
+- CheckResult
+- RiskScore
+- ComplianceStatus
+- ReviewDate
 
-### Fincen - Top 20-25 Key Entity Names:
+---
+
+### Source System: Fincen
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Compliance |
+| **Source System Name** | Fincen |
+| **System Functionality** | Financial Crimes Enforcement Network reporting for suspicious activity and currency transaction reporting. |
+| **Total Number of Tables** | 4 |
+
+#### Top 20-25 Key Entity Names:
 
 - SuspiciousActivityReport
-- Transaction
+- CurrencyTransactionReport
 - Filing
-- RegulatoryReport
+- Transaction

@@ -1,35 +1,40 @@
-# Business Unit Analysis: AAS
+# Business Unit Analysis: AAS (Advisory and Asset Services)
 
-## Source System Details
+## Business Unit: AAS
 
-| Business Unit | Source System Name | System Functionality | Total Number of Tables |
-|--------------|-------------------|---------------------|------------------------|
-| AAS | ALF | Asset and liability management system for financial risk analysis and regulatory reporting. | 68 |
+### Source System: ALF
 
-### Top 20-25 Key Entity Names:
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | AAS |
+| **Source System Name** | ALF |
+| **System Functionality** | Manages investment portfolios, client accounts, asset allocation, advisory services, and wealth management operations. |
+| **Total Number of Tables** | 68 |
 
-- Asset
-- Liability
+#### Top 20-25 Key Entity Names:
+
+- Client
+- Account
 - Portfolio
-- RiskMeasure
-- InterestRate
-- Maturity
-- CashFlow
-- Hedge
-- Derivative
+- Asset
 - Security
+- Transaction
+- Trade
 - Position
-- ValuationModel
-- Scenario
-- StressTest
-- LiquidityRatio
-- CapitalRequirement
-- RegulatoryReport
-- MarketData
-- Counterparty
-- CollateralAgreement
-- RiskLimit
-- ExposureCalculation
-- NetInterestIncome
-- DurationGap
-- ALMReport
+- Allocation
+- Advisor
+- InvestmentStrategy
+- Performance
+- Benchmark
+- Fee
+- Commission
+- Custodian
+- MarketValue
+- CashFlow
+- Dividend
+- Interest
+- Rebalancing
+- RiskProfile
+- InvestmentObjective
+- AssetClass
+- Holding

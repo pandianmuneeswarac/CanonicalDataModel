@@ -1,60 +1,1773 @@
-# Business Unit: Consumer
+# Business Unit Analysis: Consumer
 
-## Source System Analysis
+## Business Unit: Consumer
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|------------------------|
-| Consumer | Account Aggregation | Manages aggregation of customer accounts from multiple financial institutions. | - AggregatedAccount<br>- ExternalAccount<br>- Customer<br>- Institution<br>- Balance<br>- Transaction<br>- Connection<br>- Credential<br>- AccountType<br>- SyncStatus<br>- AccountHolder<br>- FinancialData<br>- AccountLink<br>- RefreshSchedule<br>- DataProvider<br>- AccountCategory<br>- AccountStatus<br>- SyncHistory<br>- ErrorLog<br>- SecurityToken | 28 |
-| Consumer | Actimize | Manages anti-money laundering and fraud detection operations. | - Alert<br>- Case<br>- Transaction<br>- Customer<br>- Account<br>- Rule<br>- Scenario<br>- Investigation<br>- SuspiciousActivity<br>- RiskScore<br>- Watchlist<br>- Pattern<br>- Behavior<br>- Disposition<br>- Escalation<br>- FalsePositive<br>- TruePositive<br>- RiskIndicator<br>- ComplianceOfficer<br>- SAR<br>- CTR<br>- AMLRule<br>- FraudRule<br>- MonitoringScenario<br>- RiskAssessment | 163 |
-| Consumer | Aithnet | Manages authentication and identity network services. | - User<br>- Identity<br>- Authentication<br>- Session<br>- Token<br>- Credential<br>- Device<br>- AccessLog<br>- SecurityPolicy<br>- MFA<br>- BiometricData<br>- LoginAttempt<br>- PasswordPolicy<br>- SecurityQuestion<br>- IdentityVerification<br>- TrustScore<br>- RiskProfile<br>- AuthenticationMethod<br>- SessionTimeout<br>- DeviceFingerprint | 38 |
-| Consumer | Andera | Manages digital banking platform and online account opening. | - Application<br>- Customer<br>- Account<br>- Product<br>- Document<br>- Verification<br>- eSignature<br>- Workflow<br>- ApprovalStatus<br>- KYC<br>- IdentityVerification<br>- FundingSource<br>- AccountOpening<br>- CustomerProfile<br>- ApplicationStatus<br>- DecisionEngine<br>- ComplianceCheck<br>- RiskAssessment<br>- DigitalOnboarding<br>- AccountActivation | 36 |
-| Consumer | ARM | Manages accounts receivable management and collections. | - Account<br>- Debtor<br>- Collection<br>- Payment<br>- Strategy<br>- Contact<br>- Promise<br>- Settlement | 8 |
-| Consumer | BlackKnight | Manages mortgage servicing and loan processing operations. | - Loan<br>- Borrower<br>- Property<br>- Payment<br>- Escrow<br>- Servicing<br>- Default<br>- Foreclosure<br>- Modification<br>- Insurance<br>- Tax<br>- Statement<br>- Transaction<br>- Investor<br>- LoanStatus | 15 |
-| Consumer | CLOS | Manages consumer loan origination system operations. | - LoanApplication<br>- Borrower<br>- CoBorrower<br>- Property<br>- Income<br>- Asset<br>- Liability<br>- Credit<br>- Underwriting<br>- Appraisal<br>- Document<br>- Condition<br>- Approval<br>- Closing<br>- Disclosure<br>- Fee<br>- LoanEstimate<br>- ClosingDisclosure<br>- Title<br>- Insurance<br>- LoanOfficer<br>- Processor<br>- Underwriter<br>- ComplianceCheck<br>- LoanProduct | 30 |
-| Consumer | Comergence | Manages commercial and consumer lending convergence platform. | - Loan<br>- Application<br>- Borrower<br>- Collateral<br>- Document<br>- Workflow<br>- Underwriting<br>- Approval<br>- Closing<br>- Servicing<br>- Payment<br>- Statement<br>- CreditAnalysis<br>- RiskRating<br>- LoanOfficer<br>- Product<br>- InterestRate<br>- Fee<br>- Covenant<br>- Compliance<br>- Amendment<br>- Renewal<br>- Maturity<br>- Disbursement<br>- LoanAgreement | 71 |
-| Consumer | Compass | Manages customer navigation and financial guidance services. | - Customer<br>- Goal<br>- Recommendation | 3 |
-| Consumer | DST | Manages data services and transfer agent operations. | - Account<br>- Shareholder<br>- Transaction<br>- Position<br>- Transfer<br>- Registration<br>- Distribution<br>- CorporateAction<br>- Dividend<br>- Statement<br>- TaxReport<br>- Beneficiary<br>- Proxy<br>- Certificate<br>- AccountType<br>- ShareClass<br>- Fund<br>- NAV | 18 |
-| Consumer | Enrollment | Manages customer enrollment and onboarding processes. | - Enrollment<br>- Customer<br>- Application<br>- Product<br>- Service<br>- Document<br>- Verification<br>- Status<br>- Workflow<br>- Approval<br>- KYC<br>- IdentityCheck<br>- Agreement<br>- Consent<br>- EnrollmentChannel<br>- EnrollmentDate<br>- CustomerProfile<br>- ContactInformation<br>- Address<br>- Phone<br>- Email<br>- Preference<br>- Beneficiary<br>- AuthorizedUser<br>- EnrollmentType | 226 |
-| Consumer | Experian | Manages credit reporting and identity verification services. | - CreditReport<br>- CreditScore<br>- Consumer<br>- Account<br>- Inquiry<br>- PublicRecord<br>- Collection<br>- TradeLines<br>- PaymentHistory<br>- CreditUtilization<br>- Delinquency<br>- Bankruptcy<br>- Foreclosure<br>- Judgment<br>- TaxLien<br>- IdentityVerification<br>- FraudAlert<br>- SecurityFreeze<br>- CreditMonitoring<br>- DisputeResolution<br>- CreditFactor<br>- RiskScore<br>- CreditInquiry<br>- AccountStatus<br>- CreditLimit | 48 |
-| Consumer | GME | Manages global money exchange and foreign currency transactions. | - Transaction<br>- Customer<br>- Currency<br>- ExchangeRate<br>- Transfer<br>- Account<br>- Beneficiary<br>- Fee<br>- Commission<br>- Settlement<br>- PaymentMethod<br>- TransactionType<br>- Country<br>- Compliance<br>- KYC<br>- AML<br>- TransactionLimit<br>- ExchangeQuote<br>- TransferStatus<br>- RemittanceAdvice<br>- CurrencyPair<br>- SpotRate<br>- ForwardRate<br>- Hedge<br>- RiskManagement | 94 |
-| Consumer | HarlandClarke | Manages check printing and payment processing services. | - Check<br>- Order<br>- Customer<br>- Account<br>- Design<br>- Shipment<br>- Payment<br>- Invoice | 8 |
-| Consumer | HRBlock | Manages tax preparation and financial services integration. | - TaxReturn<br>- Customer<br>- Form<br>- Filing<br>- Refund<br>- Payment<br>- Document<br>- W2<br>- 1099<br>- Deduction<br>- Credit<br>- Income<br>- Expense<br>- TaxYear<br>- FilingStatus<br>- Dependent<br>- Adjustment<br>- TaxLiability<br>- RefundStatus<br>- DirectDeposit<br>- TaxPreparer<br>- Signature<br>- Audit<br>- Amendment<br>- Extension | 105 |
-| Consumer | Identity | Manages customer identity verification and authentication. | - Identity<br>- Customer<br>- Verification<br>- Document<br>- BiometricData<br>- KYC<br>- IdentityCheck<br>- AuthenticationMethod<br>- VerificationStatus<br>- IdentityScore<br>- RiskAssessment<br>- IDDocument<br>- FacialRecognition<br>- LivenessCheck<br>- AddressVerification<br>- PhoneVerification<br>- EmailVerification<br>- SSNVerification<br>- IdentityTheft<br>- FraudAlert<br>- IdentityHistory<br>- VerificationAttempt<br>- TrustScore<br>- DigitalIdentity<br>- IdentityProvider | 61 |
-| Consumer | InsightEngine | Manages customer insights and analytics engine. | - Customer<br>- Behavior<br>- Segment<br>- Insight<br>- Pattern<br>- Prediction<br>- Recommendation<br>- Analytics<br>- Metric<br>- KPI<br>- Trend<br>- Score<br>- Model<br>- Feature<br>- DataPoint<br>- Analysis<br>- Report<br>- Dashboard<br>- Alert<br>- Threshold | 33 |
-| Consumer | IPL | Manages integrated personal lending operations. | - Loan<br>- Borrower<br>- Application<br>- Payment<br>- Account<br>- Product<br>- InterestRate<br>- Term<br>- Balance<br>- Transaction<br>- Statement<br>- Delinquency<br>- ChargeOff<br>- Collection<br>- Servicing<br>- Disbursement<br>- Payoff<br>- Refinance<br>- CreditScore<br>- Underwriting<br>- Approval<br>- LoanOfficer<br>- Document | 23 |
-| Consumer | IPL SQR | Manages IPL system query and reporting operations. | - Query<br>- Report<br>- Dataset<br>- Metric<br>- Dimension<br>- Fact<br>- Loan<br>- Customer<br>- Transaction<br>- Payment<br>- Delinquency<br>- Portfolio<br>- Performance<br>- Analytics<br>- Dashboard<br>- KPI<br>- Trend<br>- Forecast<br>- Segment<br>- Cohort<br>- ReportSchedule<br>- DataExtract<br>- AggregateTable<br>- HistoricalData<br>- ReportParameter | 590 |
-| Consumer | Jack Henry | Manages core banking platform for consumer banking operations. | - Account<br>- Customer<br>- Transaction<br>- Product<br>- Service<br>- Branch<br>- Relationship<br>- Agreement<br>- Fee<br>- Payment<br>- Deposit<br>- Withdrawal<br>- Transfer<br>- Balance<br>- Statement<br>- InterestRate<br>- AccountType<br>- CustomerProfile<br>- Address<br>- Contact<br>- Document<br>- Compliance<br>- AuditTrail<br>- SecurityProfile<br>- AccessControl | 2,996 |
-| Consumer | LoanDataMart | Manages loan analytics and reporting data mart. | - LoanFact<br>- CustomerDimension<br>- ProductDimension<br>- TimeDimension<br>- BranchDimension<br>- LoanMetrics<br>- PerformanceMetrics<br>- DelinquencyMetrics<br>- PortfolioMetrics<br>- OriginationMetrics<br>- ServicingMetrics<br>- PaymentMetrics<br>- RiskMetrics<br>- ProfitabilityMetrics<br>- VolumeMetrics<br>- TrendAnalysis<br>- CohortAnalysis<br>- SegmentAnalysis<br>- ForecastModel<br>- AggregateTable | 20 |
-| Consumer | LVF | Manages loan verification and fraud detection. | - Verification<br>- Loan<br>- Borrower<br>- Income<br>- Employment<br>- Asset<br>- Document<br>- FraudCheck<br>- VerificationStatus<br>- VerificationMethod<br>- ThirdPartyVerification<br>- VerificationResult<br>- FraudIndicator<br>- RiskScore<br>- Alert<br>- Investigation<br>- VerificationHistory<br>- DocumentAuthentication<br>- DataValidation<br>- ComplianceCheck | 25 |
-| Consumer | MassMaint | Manages mass maintenance operations for account updates. | - MaintenanceJob<br>- Account<br>- UpdateRequest<br>- BatchProcess<br>- ChangeLog<br>- ValidationRule<br>- ErrorLog<br>- ApprovalWorkflow<br>- AuditTrail<br>- RollbackPlan<br>- ScheduledMaintenance<br>- MaintenanceType<br>- ImpactAnalysis<br>- NotificationList<br>- MaintenanceWindow<br>- ExecutionStatus<br>- ReconciliationReport<br>- DataBackup<br>- MaintenanceHistory<br>- SystemDowntime | 76 |
-| Consumer | MeridianLink | Manages consumer loan origination and application processing. | - Application<br>- Borrower<br>- Loan<br>- Product<br>- Document<br>- Credit<br>- Income<br>- Asset<br>- Liability<br>- Underwriting<br>- Decision<br>- Approval<br>- Condition<br>- Disclosure<br>- Consent<br>- Workflow<br>- Task<br>- Status<br>- LoanOfficer<br>- Processor | 20 |
-| Consumer | MMA | Manages money market account operations. | - Account<br>- Customer<br>- Transaction<br>- Balance<br>- InterestRate<br>- Tier<br>- Statement<br>- Deposit<br>- Withdrawal<br>- Transfer<br>- Fee<br>- Yield<br>- MinimumBalance<br>- AccountType<br>- MaturityDate<br>- RateSchedule<br>- InterestAccrual<br>- AccountStatus<br>- Relationship<br>- Product | 31 |
-| Consumer | NMLS | Manages Nationwide Multistate Licensing System compliance data. | - License<br>- Licensee<br>- Company<br>- Individual<br>- Registration<br>- Renewal<br>- Compliance<br>- Examination<br>- Disclosure<br>- Sanction<br>- LicenseType<br>- State<br>- Status<br>- Application<br>- Fee<br>- ContinuingEducation<br>- BackgroundCheck<br>- CreditReport<br>- FinancialStatement<br>- SuretyBond<br>- LicenseHistory<br>- RegulatoryAction<br>- Complaint<br>- Investigation<br>- Audit | 64 |
-| Consumer | OCB | Manages online consumer banking platform. | - User<br>- Account<br>- Transaction<br>- Payment<br>- Transfer<br>- BillPay<br>- eStatement<br>- Alert | 8 |
-| Consumer | OLB | Manages online banking services and digital banking platform. | - User<br>- Account<br>- Transaction<br>- Payment<br>- Transfer<br>- BillPay<br>- Payee<br>- eStatement<br>- Alert<br>- Notification<br>- Message<br>- SecureMessage<br>- Login<br>- Session<br>- Device<br>- Authentication<br>- Authorization<br>- Preference<br>- Profile<br>- Contact<br>- Address<br>- Phone<br>- Email<br>- SecurityQuestion<br>- AccessLog | 78 |
-| Consumer | Payveris | Manages person-to-person payment and money transfer services. | - Payment<br>- User<br>- Recipient<br>- Transaction<br>- Account | 5 |
-| Consumer | PCLender | Manages personal computer-based lending operations. | - Loan<br>- Application<br>- Borrower<br>- CoBorrower<br>- Property<br>- Collateral<br>- Income<br>- Asset<br>- Liability<br>- Credit<br>- Underwriting<br>- Appraisal<br>- Document<br>- Condition<br>- Approval<br>- Closing<br>- Disclosure<br>- Fee<br>- LoanEstimate<br>- ClosingDisclosure<br>- Title<br>- Insurance<br>- LoanOfficer<br>- Processor<br>- Underwriter | 283 |
-| Consumer | Premover | Manages pre-move customer notification and address change services. | - Customer<br>- AddressChange | 2 |
-| Consumer | Prevault | Manages pre-vault document storage and retrieval operations. | - Document<br>- Vault<br>- Customer<br>- Account<br>- DocumentType<br>- Storage<br>- Retrieval<br>- Index<br>- Metadata<br>- Version<br>- AccessLog<br>- Retention<br>- Archive<br>- Disposal<br>- SecurityLevel<br>- Encryption<br>- Audit<br>- CheckIn<br>- CheckOut<br>- DocumentStatus<br>- Category<br>- Tag<br>- Search<br>- Workflow<br>- Approval | 138 |
-| Consumer | Proctor | Manages exam proctoring and identity verification for online services. | - Exam<br>- Candidate<br>- Session<br>- Proctor<br>- Verification<br>- Recording<br>- Incident<br>- Report<br>- Identity<br>- Authentication<br>- Monitoring<br>- Alert<br>- Violation<br>- Screenshot<br>- Video<br>- Audio<br>- ChatLog<br>- ExamResult<br>- Certification | 19 |
-| Consumer | Qualtrics | Manages customer experience surveys and feedback collection. | - Survey<br>- Response<br>- Question<br>- Respondent<br>- Distribution<br>- Campaign<br>- Feedback | 7 |
-| Consumer | Quantarium | Manages automated property valuation and real estate analytics. | - Property<br>- Valuation<br>- Address<br>- MarketData | 4 |
-| Consumer | RAF | Manages retail account funding operations. | - FundingRequest<br>- Account<br>- Customer<br>- FundingSource<br>- Transaction<br>- Verification<br>- Status<br>- Amount<br>- FundingMethod<br>- BankAccount<br>- RoutingNumber<br>- AccountNumber | 12 |
-| Consumer | Rakuten | Manages rewards and cashback program integration. | - Member<br>- Transaction<br>- Reward<br>- Cashback<br>- Merchant<br>- Offer<br>- Redemption<br>- Balance | 8 |
-| Consumer | Refi | Manages mortgage refinancing operations and applications. | - RefinanceApplication<br>- Borrower<br>- ExistingLoan<br>- NewLoan<br>- Property<br>- Appraisal<br>- Income<br>- Asset<br>- Credit<br>- Underwriting<br>- RateQuote<br>- LoanEstimate<br>- ClosingDisclosure<br>- Document<br>- Condition<br>- Approval<br>- Closing<br>- Title<br>- Insurance<br>- Escrow<br>- Fee<br>- Savings<br>- CashOut<br>- RefinanceType<br>- LoanOfficer | 53 |
-| Consumer | RIS | Manages retail investment services and brokerage operations. | - Account<br>- Customer<br>- Security<br>- Trade<br>- Order<br>- Position<br>- Transaction<br>- Portfolio<br>- Asset<br>- Cash<br>- Settlement<br>- Commission<br>- Fee<br>- Statement<br>- TaxReport<br>- CorporateAction<br>- Dividend<br>- Interest<br>- MarketValue<br>- CostBasis<br>- Performance<br>- RiskProfile<br>- InvestmentObjective<br>- Beneficiary<br>- Custodian | 30 |
-| Consumer | SBLOC | Manages securities-backed line of credit operations. | - LineOfCredit<br>- Borrower<br>- Collateral<br>- Security<br>- Advance<br>- Payment<br>- Balance<br>- InterestRate<br>- CreditLimit<br>- MarginRequirement<br>- LoanToValue | 11 |
-| Consumer | SFR Boarding | Manages single-family rental property boarding and onboarding. | - Property<br>- Owner<br>- Tenant<br>- Lease<br>- Boarding<br>- Document<br>- Verification<br>- Approval<br>- Status | 9 |
-| Consumer | Synapsys | Manages synaptic integration and neural network-based decisioning. | - Model<br>- Decision<br>- Input<br>- Output<br>- Rule<br>- Score<br>- Prediction | 7 |
-| Consumer | TCA | Manages total cost analysis and fee management. | - Fee<br>- Account<br>- Transaction<br>- FeeType<br>- FeeSchedule<br>- Waiver<br>- Revenue<br>- Cost<br>- Pricing<br>- Product<br>- Service<br>- Customer<br>- FeeCalculation<br>- FeeAssessment<br>- FeePosting<br>- FeeReversal<br>- FeeException<br>- FeeRule<br>- FeeCategory<br>- FeeAnalysis<br>- FeeForecast<br>- FeeOptimization<br>- FeeCompliance<br>- FeeReport<br>- FeeAudit | 165 |
-| Consumer | ICI | Manages integrated customer information and data consolidation. | - Customer<br>- Account<br>- Relationship<br>- Contact<br>- Address<br>- Phone<br>- Email<br>- Profile<br>- Preference<br>- Demographic<br>- Household<br>- Product<br>- Service<br>- Transaction<br>- Balance<br>- Statement<br>- Document<br>- Alert<br>- Communication<br>- Consent<br>- Privacy<br>- Segmentation<br>- CustomerValue<br>- Lifecycle<br>- Interaction | 56 |
-| Consumer | ICDB | Manages integrated customer database operations. | - Customer<br>- Account<br>- Transaction<br>- Product<br>- Relationship<br>- Contact<br>- Address<br>- Phone<br>- Email<br>- Profile<br>- Preference<br>- Demographic<br>- Household<br>- Balance<br>- Statement<br>- Document<br>- Alert<br>- Communication<br>- Consent<br>- Privacy<br>- Segmentation<br>- CustomerValue<br>- Lifecycle<br>- Interaction<br>- History | 67 |
-| Consumer | Unenrollment | Manages customer unenrollment and service cancellation processes. | - UnenrollmentRequest<br>- Customer<br>- Account<br>- Service<br>- Product<br>- Reason<br>- Status<br>- Date<br>- Workflow<br>- Approval<br>- Confirmation<br>- Refund<br>- FinalStatement<br>- ClosureDocument<br>- RetentionAttempt<br>- ExitSurvey<br>- Feedback<br>- CancellationFee<br>- ProrationCalculation<br>- AccountClosure<br>- DataRetention<br>- ArchiveRecord<br>- NotificationSent<br>- AuditTrail<br>- ComplianceCheck | 276 |
-| Consumer | ULP | Manages universal lending platform operations. | - Loan<br>- Application<br>- Borrower<br>- Product<br>- Underwriting<br>- Decision<br>- Document<br>- Workflow<br>- Task<br>- Status<br>- Approval<br>- Condition<br>- Disclosure<br>- Consent<br>- Credit<br>- Income<br>- Asset<br>- Liability<br>- Collateral<br>- Appraisal<br>- Closing<br>- Funding<br>- Servicing<br>- LoanOfficer<br>- Processor | 82 |
-| Consumer | ULP LOS DB | Manages universal lending platform loan origination system database. | - Application<br>- Loan<br>- Borrower<br>- Property<br>- Income<br>- Asset<br>- Liability<br>- Credit<br>- Document<br>- Underwriting<br>- Approval<br>- Condition<br>- Disclosure<br>- Fee<br>- Closing<br>- LoanOfficer<br>- Processor<br>- Underwriter<br>- Product<br>- Rate<br>- Term<br>- Amount<br>- Status<br>- Workflow<br>- Task | 30 |
-| Consumer | UniversalEnrollment | Manages universal customer enrollment across all products and services. | - Enrollment<br>- Customer | 2 |
-| Consumer | UniversalEnrollmentRulesEngine | Manages business rules engine for universal enrollment decisioning. | - Rule<br>- Condition<br>- Action<br>- Decision<br>- RuleSet<br>- Parameter<br>- Expression<br>- Validation<br>- Eligibility<br>- Requirement<br>- Criteria<br>- Evaluation<br>- Result<br>- RuleExecution<br>- RuleVersion<br>- RuleCategory<br>- RuleType<br>- RulePriority<br>- RuleStatus<br>- RuleAudit<br>- RuleTest<br>- RuleDeployment<br>- DecisionTable<br>- DecisionTree<br>- BusinessLogic | 40 |
-| Consumer | Verafin | Manages financial crime detection and compliance monitoring. | - Alert<br>- Case<br>- Transaction<br>- Customer<br>- Account<br>- SuspiciousActivity<br>- Investigation<br>- Report<br>- SAR<br>- CTR<br>- Rule<br>- Scenario<br>- RiskScore<br>- Watchlist<br>- Sanction<br>- PEP<br>- AdverseMedia<br>- MoneyLaundering<br>- FraudDetection<br>- ComplianceOfficer<br>- Disposition<br>- Escalation<br>- AuditTrail<br>- RegulatoryFiling<br>- CaseManagement | 26 |
-| Consumer | WLS | Manages wholesale lending system operations. | - Loan | 1 |
-| Consumer | WLSBDDFI | Manages wholesale lending system business data and financial integration. | - Loan<br>- Borrower<br>- Application<br>- Underwriting<br>- Approval<br>- Document<br>- Collateral<br>- Pricing<br>- Rate<br>- Fee<br>- Investor<br>- Product<br>- Program<br>- Guideline<br>- Compliance<br>- Delivery<br>- Purchase<br>- Sale<br>- Servicing<br>- Warehouse<br>- Funding<br>- Settlement<br>- Pipeline<br>- LockDesk<br>- SecondaryMarketing | 27 |
-| Consumer | Yodlee | Manages account aggregation and financial data connectivity. | - Account<br>- Provider<br>- Transaction<br>- Balance<br>- Customer<br>- Connection<br>- Credential<br>- Refresh<br>- DataSet | 9 |
+---
+
+### Source System: Account Aggregation
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Account Aggregation |
+| **System Functionality** | Aggregates external account information for consolidated financial view and personal finance management. |
+| **Total Number of Tables** | 28 |
+
+#### Top 20-25 Key Entity Names:
+
+- ExternalAccount
+- Institution
+- Connection
+- Transaction
+- Balance
+- AccountHolder
+- Credential
+- SyncStatus
+- Category
+- Merchant
+- AggregationJob
+- RefreshSchedule
+- ErrorLog
+- AccountType
+- FinancialSummary
+- NetWorth
+- CashFlow
+- Spending
+- Income
+- Budget
+- Goal
+- Alert
+- Notification
+- DataProvider
+- ConsentManagement
+
+---
+
+### Source System: Actimize
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Actimize |
+| **System Functionality** | Anti-money laundering and fraud detection system monitoring suspicious activities and compliance alerts. |
+| **Total Number of Tables** | 163 |
+
+#### Top 20-25 Key Entity Names:
+
+- Alert
+- Case
+- Transaction
+- Customer
+- Account
+- Rule
+- Scenario
+- Investigation
+- SuspiciousActivity
+- RiskScore
+- Watchlist
+- PEP
+- SanctionList
+- EntityResolution
+- NetworkAnalysis
+- BehaviorPattern
+- Anomaly
+- Disposition
+- Escalation
+- SAR
+- CTR
+- RegulatoryReport
+- AuditTrail
+- FalsePositive
+- ModelPerformance
+
+---
+
+### Source System: Aithnet
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Aithnet |
+| **System Functionality** | Authentication network managing identity verification, multi-factor authentication, and secure access control. |
+| **Total Number of Tables** | 38 |
+
+#### Top 20-25 Key Entity Names:
+
+- User
+- Authentication
+- Session
+- Token
+- Credential
+- Device
+- BiometricData
+- OTP
+- SecurityQuestion
+- LoginAttempt
+- AccessLog
+- SecurityPolicy
+- RiskAssessment
+- TrustScore
+- IPAddress
+- Location
+- Browser
+- DeviceFingerprint
+- Challenge
+- Response
+- LockoutPolicy
+- PasswordHistory
+- SecurityEvent
+- ThreatDetection
+- AuthenticationMethod
+
+---
+
+### Source System: Andera
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Andera |
+| **System Functionality** | Digital account opening and customer onboarding platform for seamless application processing. |
+| **Total Number of Tables** | 36 |
+
+#### Top 20-25 Key Entity Names:
+
+- Application
+- Applicant
+- Product
+- Account
+- Document
+- Verification
+- CreditCheck
+- IdentityVerification
+- Workflow
+- Status
+- Decision
+- Approval
+- Funding
+- Disclosure
+- Consent
+- eSignature
+- KYC
+- CIP
+- RiskAssessment
+- ComplianceCheck
+- ApplicationStep
+- FieldValidation
+- BusinessRule
+- NotificationEvent
+- AuditLog
+
+---
+
+### Source System: ARM
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | ARM |
+| **System Functionality** | Accounts receivable management for collections, delinquency tracking, and recovery operations. |
+| **Total Number of Tables** | 8 |
+
+#### Top 20-25 Key Entity Names:
+
+- Account
+- Debtor
+- Collection
+- Payment
+- Promise
+- ContactLog
+- Strategy
+- Status
+
+---
+
+### Source System: BlackKnight
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | BlackKnight |
+| **System Functionality** | Mortgage servicing platform managing loan servicing, payments, escrow, and default management. |
+| **Total Number of Tables** | 15 |
+
+#### Top 20-25 Key Entity Names:
+
+- Loan
+- Borrower
+- Payment
+- Escrow
+- Transaction
+- Servicing
+- Default
+- Foreclosure
+- Modification
+- PropertyTax
+- Insurance
+- Principal
+- Interest
+- LateCharge
+- PayoffQuote
+
+---
+
+### Source System: CLOS
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | CLOS |
+| **System Functionality** | Consumer loan origination system processing loan applications, underwriting, and approval workflows. |
+| **Total Number of Tables** | 30 |
+
+#### Top 20-25 Key Entity Names:
+
+- LoanApplication
+- Borrower
+- CoBorrower
+- Income
+- Asset
+- Liability
+- Employment
+- CreditReport
+- Property
+- Appraisal
+- Underwriting
+- Condition
+- Approval
+- Denial
+- LoanProduct
+- RateSheet
+- Fee
+- Disclosure
+- Document
+- Stipulation
+- Verification
+- DecisionEngine
+- ComplianceCheck
+- LoanEstimate
+- ClosingDisclosure
+
+---
+
+### Source System: Comergence
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Comergence |
+| **System Functionality** | Commercial convergence platform integrating consumer and commercial banking data for unified customer view. |
+| **Total Number of Tables** | 71 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- Account
+- Relationship
+- Product
+- Service
+- Transaction
+- Balance
+- Profile
+- Household
+- BusinessEntity
+- ContactInfo
+- Preference
+- Segment
+- LifecycleStage
+- Engagement
+- Channel
+- Interaction
+- Campaign
+- Offer
+- Response
+- CrossSell
+- Retention
+- Churn
+- Value
+- Profitability
+
+---
+
+### Source System: Compass
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Compass |
+| **System Functionality** | Customer navigation and guidance system for product recommendations and financial planning. |
+| **Total Number of Tables** | 3 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- Recommendation
+- FinancialGoal
+
+---
+
+### Source System: DST
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | DST |
+| **System Functionality** | Investment account management and mutual fund processing for retail investment services. |
+| **Total Number of Tables** | 18 |
+
+#### Top 20-25 Key Entity Names:
+
+- Account
+- Investor
+- Fund
+- Position
+- Transaction
+- Trade
+- NAV
+- Distribution
+- Dividend
+- CapitalGain
+- Redemption
+- Purchase
+- Exchange
+- Transfer
+- Statement
+- TaxLot
+- CostBasis
+- Performance
+
+---
+
+### Source System: Enrollment
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Enrollment |
+| **System Functionality** | Customer enrollment system managing service registrations, product enrollments, and feature activations. |
+| **Total Number of Tables** | 226 |
+
+#### Top 20-25 Key Entity Names:
+
+- Enrollment
+- Customer
+- Product
+- Service
+- Feature
+- Status
+- Application
+- Approval
+- Activation
+- Configuration
+- Preference
+- Consent
+- Agreement
+- Disclosure
+- Verification
+- Eligibility
+- Requirement
+- Document
+- Workflow
+- Step
+- Validation
+- Notification
+- Confirmation
+- EnrollmentHistory
+- AuditLog
+
+---
+
+### Source System: Experian
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Experian |
+| **System Functionality** | Credit bureau integration for credit reports, scores, identity verification, and fraud detection. |
+| **Total Number of Tables** | 48 |
+
+#### Top 20-25 Key Entity Names:
+
+- CreditReport
+- CreditScore
+- Consumer
+- Tradeline
+- Inquiry
+- PublicRecord
+- Collection
+- Account
+- Payment
+- Balance
+- CreditLimit
+- Delinquency
+- ChargeOff
+- Bankruptcy
+- Foreclosure
+- Judgment
+- TaxLien
+- Address
+- Employer
+- IdentityVerification
+- FraudAlert
+- SecurityFreeze
+- DisputeRecord
+- CreditMonitoring
+- RiskModel
+
+---
+
+### Source System: GME
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | GME |
+| **System Functionality** | General management engine for customer lifecycle management and operational workflow automation. |
+| **Total Number of Tables** | 94 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- Account
+- Transaction
+- Event
+- Workflow
+- Task
+- Process
+- Status
+- Rule
+- Action
+- Trigger
+- Schedule
+- Queue
+- Assignment
+- Escalation
+- Notification
+- Template
+- Configuration
+- Parameter
+- Log
+- Error
+- Audit
+- Performance
+- Metric
+- Dashboard
+
+---
+
+### Source System: HarlandClarke
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | HarlandClarke |
+| **System Functionality** | Check printing and card production services managing orders, personalization, and fulfillment. |
+| **Total Number of Tables** | 8 |
+
+#### Top 20-25 Key Entity Names:
+
+- Order
+- Customer
+- Product
+- Check
+- Card
+- Personalization
+- Fulfillment
+- Delivery
+
+---
+
+### Source System: HRBlock
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | HRBlock |
+| **System Functionality** | Tax preparation and refund advance services integration for consumer tax-related financial products. |
+| **Total Number of Tables** | 105 |
+
+#### Top 20-25 Key Entity Names:
+
+- TaxReturn
+- Taxpayer
+- Refund
+- Advance
+- Loan
+- Application
+- Income
+- Deduction
+- Credit
+- WithholdingTax
+- Filing
+- Status
+- Payment
+- Disbursement
+- Fee
+- Interest
+- Repayment
+- Document
+- W2
+- Form1099
+- Schedule
+- Dependent
+- Adjustment
+- AuditSupport
+- TaxYear
+
+---
+
+### Source System: Identity
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Identity |
+| **System Functionality** | Identity management system for customer identity verification, authentication, and access control. |
+| **Total Number of Tables** | 61 |
+
+#### Top 20-25 Key Entity Names:
+
+- Identity
+- User
+- Credential
+- Authentication
+- Authorization
+- Profile
+- Attribute
+- Verification
+- Document
+- BiometricData
+- Device
+- Session
+- Token
+- Permission
+- Role
+- Policy
+- AccessControl
+- SecurityQuestion
+- PasswordPolicy
+- LoginHistory
+- IdentityProof
+- KYC
+- CIP
+- RiskScore
+- FraudIndicator
+
+---
+
+### Source System: InsightEngine
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | InsightEngine |
+| **System Functionality** | Analytics and insights engine providing customer behavior analysis, predictive modeling, and business intelligence. |
+| **Total Number of Tables** | 33 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- Behavior
+- Segment
+- Pattern
+- Prediction
+- Model
+- Score
+- Insight
+- Trend
+- Metric
+- KPI
+- Dashboard
+- Report
+- Analysis
+- Correlation
+- Propensity
+- Churn
+- Lifetime Value
+- Engagement
+- Conversion
+- Attribution
+- Campaign
+- Channel
+- Touchpoint
+- Journey
+
+---
+
+### Source System: IPL
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | IPL |
+| **System Functionality** | Integrated product library managing product definitions, configurations, pricing, and features. |
+| **Total Number of Tables** | 23 |
+
+#### Top 20-25 Key Entity Names:
+
+- Product
+- Feature
+- Configuration
+- Pricing
+- RateTable
+- Fee
+- Term
+- Condition
+- Eligibility
+- Requirement
+- Benefit
+- Restriction
+- ProductCategory
+- ProductType
+- Version
+- EffectiveDate
+- ExpirationDate
+- Promotion
+- Discount
+- Bundle
+- CrossSell
+- ProductRule
+- Attribute
+
+---
+
+### Source System: IPL SQR
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | IPL SQR |
+| **System Functionality** | Integrated product library reporting system for product analytics, performance tracking, and regulatory reporting. |
+| **Total Number of Tables** | 590 |
+
+#### Top 20-25 Key Entity Names:
+
+- ProductReport
+- SalesMetric
+- PerformanceIndicator
+- ProductUsage
+- Revenue
+- Volume
+- Trend
+- Comparison
+- Forecast
+- Variance
+- Profitability
+- MarketShare
+- CustomerAdoption
+- ProductMix
+- CrossSellRate
+- RetentionRate
+- AttritionRate
+- ComplianceReport
+- RegulatoryFiling
+- AuditTrail
+- DataQuality
+- ReportSchedule
+- Distribution
+- Subscription
+- ReportParameter
+
+---
+
+### Source System: Jack Henry
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Jack Henry |
+| **System Functionality** | Core banking system managing accounts, transactions, customer information, and banking operations. |
+| **Total Number of Tables** | 2,996 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- Account
+- Transaction
+- Deposit
+- Withdrawal
+- Transfer
+- Payment
+- Loan
+- Card
+- Statement
+- Fee
+- Interest
+- Balance
+- Product
+- Service
+- Branch
+- Relationship
+- Beneficiary
+- Collateral
+- CreditLine
+- OverdraftProtection
+- AutomatedTransfer
+- DirectDeposit
+- BillPay
+- CheckImage
+
+---
+
+### Source System: LoanDataMart
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | LoanDataMart |
+| **System Functionality** | Loan analytics data mart for loan portfolio analysis, performance tracking, and risk reporting. |
+| **Total Number of Tables** | 20 |
+
+#### Top 20-25 Key Entity Names:
+
+- LoanFact
+- BorrowerDimension
+- LoanTypeDimension
+- TimeDimension
+- PerformanceMetric
+- DelinquencyRate
+- DefaultRate
+- PrepaymentRate
+- LossRate
+- Vintage
+- Cohort
+- Portfolio
+- RiskSegment
+- CreditScore
+- LTV
+- DTI
+- InterestRate
+- Balance
+- Payment
+- ChargeOff
+
+---
+
+### Source System: LVF
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | LVF |
+| **System Functionality** | Loan verification framework validating loan data, compliance requirements, and quality assurance. |
+| **Total Number of Tables** | 25 |
+
+#### Top 20-25 Key Entity Names:
+
+- Loan
+- Verification
+- ValidationRule
+- ComplianceCheck
+- DataQuality
+- ErrorLog
+- Exception
+- Correction
+- AuditTrail
+- Document
+- Evidence
+- Attestation
+- ReviewStatus
+- Approval
+- Rejection
+- Remediation
+- ControlPoint
+- TestCase
+- Result
+- Finding
+- Resolution
+- SignOff
+- CertificationLog
+- QualityScore
+- ComplianceStatus
+
+---
+
+### Source System: MassMaint
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | MassMaint |
+| **System Functionality** | Mass maintenance system for bulk updates, batch processing, and systematic account modifications. |
+| **Total Number of Tables** | 76 |
+
+#### Top 20-25 Key Entity Names:
+
+- BatchJob
+- UpdateRequest
+- Account
+- Customer
+- Transaction
+- Change
+- ValidationRule
+- ErrorRecord
+- SuccessRecord
+- RollbackLog
+- Schedule
+- Trigger
+- Condition
+- Action
+- Template
+- Parameter
+- ExecutionLog
+- Status
+- Approval
+- Authorization
+- AuditTrail
+- ReconciliationReport
+- ImpactAnalysis
+- TestRun
+- ProductionRun
+
+---
+
+### Source System: MeridianLink
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | MeridianLink |
+| **System Functionality** | Digital lending platform for loan origination, application processing, and credit decisioning. |
+| **Total Number of Tables** | 20 |
+
+#### Top 20-25 Key Entity Names:
+
+- Application
+- Applicant
+- Loan
+- CreditReport
+- Income
+- Asset
+- Liability
+- Employment
+- Decision
+- Approval
+- Denial
+- Condition
+- Document
+- Verification
+- Underwriting
+- Pricing
+- RateSheet
+- Fee
+- Disclosure
+- Consent
+
+---
+
+### Source System: MMA
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | MMA |
+| **System Functionality** | Money market account management for high-yield savings, tiered interest rates, and liquidity management. |
+| **Total Number of Tables** | 31 |
+
+#### Top 20-25 Key Entity Names:
+
+- Account
+- Customer
+- Balance
+- Transaction
+- InterestRate
+- Tier
+- Accrual
+- Payment
+- Withdrawal
+- Deposit
+- Transfer
+- Statement
+- Fee
+- Minimum Balance
+- YieldCalculation
+- RateChange
+- CompoundingPeriod
+- MaturityDate
+- Penalty
+- Sweep
+- LiquidityPool
+- InvestmentOption
+- RateHistory
+- BalanceHistory
+- TaxReporting
+
+---
+
+### Source System: NMLS
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | NMLS |
+| **System Functionality** | Nationwide Mortgage Licensing System integration for loan officer licensing and compliance tracking. |
+| **Total Number of Tables** | 64 |
+
+#### Top 20-25 Key Entity Names:
+
+- LoanOfficer
+- License
+- Registration
+- Company
+- Branch
+- Sponsorship
+- Education
+- Examination
+- ContinuingEducation
+- BackgroundCheck
+- CreditReport
+- Disclosure
+- Complaint
+- Disciplinary Action
+- RegulatoryAction
+- Renewal
+- Expiration
+- Status
+- Jurisdiction
+- LicenseType
+- Endorsement
+- Transition
+- Surrender
+- Revocation
+- ComplianceHistory
+
+---
+
+### Source System: OCB
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | OCB |
+| **System Functionality** | Online commercial banking portal for business customers accessing accounts and services digitally. |
+| **Total Number of Tables** | 8 |
+
+#### Top 20-25 Key Entity Names:
+
+- BusinessCustomer
+- Account
+- User
+- Transaction
+- Payment
+- Transfer
+- Authorization
+- AccessControl
+
+---
+
+### Source System: OLB
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | OLB |
+| **System Functionality** | Online banking platform providing digital account access, transactions, bill pay, and self-service. |
+| **Total Number of Tables** | 78 |
+
+#### Top 20-25 Key Entity Names:
+
+- User
+- Account
+- Transaction
+- Transfer
+- Payment
+- Payee
+- BillPay
+- eStatement
+- Alert
+- Notification
+- Message
+- Session
+- Login
+- Security
+- Preference
+- Profile
+- Beneficiary
+- ScheduledPayment
+- RecurringTransfer
+- StopPayment
+- CheckImage
+- TransactionHistory
+- AccountSummary
+- QuickBalance
+- MobileDeposit
+
+---
+
+### Source System: Payveris
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Payveris |
+| **System Functionality** | Digital payment platform for P2P payments, bill pay, and money movement services. |
+| **Total Number of Tables** | 5 |
+
+#### Top 20-25 Key Entity Names:
+
+- Payment
+- User
+- Payee
+- Transaction
+- Transfer
+
+---
+
+### Source System: PCLender
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | PCLender |
+| **System Functionality** | Consumer lending system managing personal loans, auto loans, credit decisions, and loan servicing. |
+| **Total Number of Tables** | 283 |
+
+#### Top 20-25 Key Entity Names:
+
+- Loan
+- Borrower
+- CoBorrower
+- Application
+- Credit
+- Collateral
+- Payment
+- Transaction
+- Interest
+- Principal
+- Fee
+- LateCharge
+- Payoff
+- Refinance
+- Modification
+- Default
+- ChargeOff
+- Recovery
+- Insurance
+- GAP
+- Warranty
+- Dealer
+- Vehicle
+- Title
+- Lien
+
+---
+
+### Source System: Premover
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Premover |
+| **System Functionality** | Pre-move customer targeting for marketing to customers planning to relocate. |
+| **Total Number of Tables** | 2 |
+
+#### Top 20-25 Key Entity Names:
+
+- Customer
+- MoveIndicator
+
+---
+
+### Source System: Prevault
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Prevault |
+| **System Functionality** | Pre-vault document management for staging, validation, and preparation before permanent archival. |
+| **Total Number of Tables** | 138 |
+
+#### Top 20-25 Key Entity Names:
+
+- Document
+- StagingArea
+- Validation
+- Metadata
+- Classification
+- Index
+- QualityCheck
+- Verification
+- Approval
+- Rejection
+- Correction
+- Batch
+- Scan
+- OCR
+- DataExtraction
+- DocumentType
+- Status
+- Workflow
+- Assignment
+- Review
+- Exception
+- Resolution
+- AuditLog
+- TransferLog
+- RetentionRule
+
+---
+
+### Source System: Proctor
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Proctor |
+| **System Functionality** | Proctoring and monitoring system for exam supervision and compliance oversight. |
+| **Total Number of Tables** | 19 |
+
+#### Top 20-25 Key Entity Names:
+
+- Exam
+- Candidate
+- Session
+- Proctor
+- Monitoring
+- Recording
+- Incident
+- Violation
+- Report
+- Schedule
+- Room
+- Equipment
+- IdentityVerification
+- Compliance
+- AuditLog
+- Alert
+- Review
+- Certification
+- Result
+
+---
+
+### Source System: Qualtrics
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Qualtrics |
+| **System Functionality** | Customer experience management collecting feedback, surveys, and satisfaction metrics. |
+| **Total Number of Tables** | 7 |
+
+#### Top 20-25 Key Entity Names:
+
+- Survey
+- Response
+- Question
+- Respondent
+- Score
+- Feedback
+- Distribution
+
+---
+
+### Source System: Quantarium
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Quantarium |
+| **System Functionality** | Property valuation and real estate analytics for automated valuation models and risk assessment. |
+| **Total Number of Tables** | 4 |
+
+#### Top 20-25 Key Entity Names:
+
+- Property
+- Valuation
+- Market
+- RiskScore
+
+---
+
+### Source System: RAF
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | RAF |
+| **System Functionality** | Risk assessment framework evaluating credit risk, operational risk, and compliance risk. |
+| **Total Number of Tables** | 12 |
+
+#### Top 20-25 Key Entity Names:
+
+- RiskAssessment
+- Customer
+- Account
+- RiskScore
+- RiskFactor
+- Model
+- Calculation
+- Threshold
+- Alert
+- Mitigation
+- Control
+- Monitoring
+
+---
+
+### Source System: Rakuten
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Rakuten |
+| **System Functionality** | Rewards and cashback program integration for customer loyalty and merchant partnerships. |
+| **Total Number of Tables** | 8 |
+
+#### Top 20-25 Key Entity Names:
+
+- Member
+- Transaction
+- Reward
+- Cashback
+- Merchant
+- Offer
+- Redemption
+- Balance
+
+---
+
+### Source System: Refi
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Refi |
+| **System Functionality** | Refinancing platform managing loan refinance applications, rate comparisons, and payoff processing. |
+| **Total Number of Tables** | 53 |
+
+#### Top 20-25 Key Entity Names:
+
+- RefinanceApplication
+- ExistingLoan
+- NewLoan
+- Borrower
+- RateComparison
+- Savings
+- Payoff
+- Closing
+- Title
+- Appraisal
+- Underwriting
+- Approval
+- Funding
+- Document
+- Disclosure
+- Fee
+- CashOut
+- TermChange
+- RateChange
+- LenderCredit
+- ClosingCost
+- BreakEvenAnalysis
+- Benefit
+- Decision
+- Status
+
+---
+
+### Source System: RIS
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | RIS |
+| **System Functionality** | Retail information system managing product information, inventory, and customer transactions. |
+| **Total Number of Tables** | 30 |
+
+#### Top 20-25 Key Entity Names:
+
+- Product
+- Inventory
+- Transaction
+- Customer
+- Sale
+- Return
+- SKU
+- Price
+- Discount
+- Promotion
+- Store
+- Location
+- Stock
+- Replenishment
+- Order
+- Supplier
+- Receipt
+- Payment
+- Loyalty
+- Membership
+- Category
+- Brand
+- Attribute
+- Availability
+- Reservation
+
+---
+
+### Source System: SBLOC
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | SBLOC |
+| **System Functionality** | Securities-backed line of credit managing collateralized lending against investment portfolios. |
+| **Total Number of Tables** | 11 |
+
+#### Top 20-25 Key Entity Names:
+
+- CreditLine
+- Borrower
+- Collateral
+- Security
+- Portfolio
+- Advance
+- Repayment
+- MarginCall
+- LTV
+- InterestRate
+- Fee
+
+---
+
+### Source System: SFR Boarding
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | SFR Boarding |
+| **System Functionality** | Single-family rental boarding system for property onboarding and rental account setup. |
+| **Total Number of Tables** | 9 |
+
+#### Top 20-25 Key Entity Names:
+
+- Property
+- Owner
+- Tenant
+- Lease
+- Account
+- Onboarding
+- Document
+- Verification
+- Approval
+
+---
+
+### Source System: Synapsys
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Synapsys |
+| **System Functionality** | Synapse system integrating multiple banking systems and enabling real-time data synchronization. |
+| **Total Number of Tables** | 7 |
+
+#### Top 20-25 Key Entity Names:
+
+- Integration
+- DataSync
+- System
+- Message
+- Queue
+- Log
+- Error
+
+---
+
+### Source System: TCA
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | TCA |
+| **System Functionality** | Transaction cost analysis system evaluating trading costs, execution quality, and broker performance. |
+| **Total Number of Tables** | 165 |
+
+#### Top 20-25 Key Entity Names:
+
+- Trade
+- Execution
+- Order
+- Broker
+- Venue
+- Price
+- Cost
+- Slippage
+- Spread
+- Commission
+- Fee
+- Benchmark
+- VWAP
+- TWAP
+- Implementation Shortfall
+- MarketImpact
+- TimingCost
+- OpportunityCost
+- Analysis
+- Report
+- Performance
+- Quality
+- Comparison
+- Attribution
+- Metric
+
+---
+
+### Source System: ICI
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | ICI |
+| **System Functionality** | Investment Company Institute data managing mutual fund information and investment company reporting. |
+| **Total Number of Tables** | 56 |
+
+#### Top 20-25 Key Entity Names:
+
+- Fund
+- InvestmentCompany
+- ShareClass
+- NAV
+- Performance
+- Holdings
+- Asset
+- Expense
+- Fee
+- Distribution
+- Dividend
+- CapitalGain
+- Prospectus
+- SAI
+- Fact Sheet
+- Benchmark
+- Return
+- Risk
+- Volatility
+- Sharpe Ratio
+- Alpha
+- Beta
+- Portfolio Manager
+- Strategy
+- Objective
+
+---
+
+### Source System: ICDB
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | ICDB |
+| **System Functionality** | Investment company database storing comprehensive fund data, performance metrics, and regulatory information. |
+| **Total Number of Tables** | 67 |
+
+#### Top 20-25 Key Entity Names:
+
+- InvestmentCompany
+- Fund
+- Series
+- ShareClass
+- Registration
+- Prospectus
+- Filing
+- Performance
+- NAV
+- Asset
+- Holding
+- Expense
+- Fee
+- Distribution
+- Manager
+- Advisor
+- Custodian
+- TransferAgent
+- Auditor
+- Legal Counsel
+- Benchmark
+- RiskMetric
+- ComplianceRecord
+- RegulatoryReport
+- HistoricalData
+
+---
+
+### Source System: Unenrollment
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Unenrollment |
+| **System Functionality** | Customer unenrollment system managing service cancellations, account closures, and opt-out processing. |
+| **Total Number of Tables** | 276 |
+
+#### Top 20-25 Key Entity Names:
+
+- Unenrollment
+- Customer
+- Account
+- Service
+- Product
+- Reason
+- Request
+- Approval
+- Cancellation
+- Closure
+- OptOut
+- Retention Offer
+- SaveAttempt
+- Feedback
+- Survey
+- ExitInterview
+- FinalStatement
+- Refund
+- Settlement
+- Document
+- Confirmation
+- EffectiveDate
+- Workflow
+- Status
+- AuditLog
+
+---
+
+### Source System: ULP
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | ULP |
+| **System Functionality** | Universal lending platform providing unified loan origination across multiple product types. |
+| **Total Number of Tables** | 82 |
+
+#### Top 20-25 Key Entity Names:
+
+- LoanApplication
+- Borrower
+- Product
+- Credit
+- Income
+- Asset
+- Liability
+- Employment
+- Property
+- Collateral
+- Underwriting
+- Decision
+- Approval
+- Condition
+- Document
+- Verification
+- Pricing
+- Rate
+- Fee
+- Disclosure
+- Compliance
+- Workflow
+- Status
+- Integration
+- AuditLog
+
+---
+
+### Source System: ULP LOS DB
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | ULP LOS DB |
+| **System Functionality** | Universal lending platform loan origination system database storing application and decisioning data. |
+| **Total Number of Tables** | 30 |
+
+#### Top 20-25 Key Entity Names:
+
+- Application
+- Borrower
+- Loan
+- Decision
+- Credit
+- Income
+- Asset
+- Employment
+- Property
+- Underwriting
+- Approval
+- Condition
+- Document
+- Status
+- Workflow
+- Pricing
+- Rate
+- Fee
+- Compliance
+- AuditLog
+
+---
+
+### Source System: UniversalEnrollment
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | UniversalEnrollment |
+| **System Functionality** | Universal enrollment platform providing standardized enrollment across all products and services. |
+| **Total Number of Tables** | 2 |
+
+#### Top 20-25 Key Entity Names:
+
+- Enrollment
+- Customer
+
+---
+
+### Source System: UniversalEnrollmentRulesEngine
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | UniversalEnrollmentRulesEngine |
+| **System Functionality** | Rules engine for enrollment validation, eligibility checks, and automated enrollment decisioning. |
+| **Total Number of Tables** | 40 |
+
+#### Top 20-25 Key Entity Names:
+
+- Rule
+- RuleSet
+- Condition
+- Action
+- Eligibility
+- Validation
+- Decision
+- Outcome
+- Parameter
+- Configuration
+- Execution
+- Log
+- Error
+- Override
+- Exception
+- BusinessLogic
+- Workflow
+- Status
+- Approval
+- Rejection
+- Reason
+- AuditTrail
+- Version
+- TestCase
+- Performance
+
+---
+
+### Source System: Verafin
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Verafin |
+| **System Functionality** | Fraud detection and anti-money laundering platform monitoring transactions and identifying suspicious activities. |
+| **Total Number of Tables** | 26 |
+
+#### Top 20-25 Key Entity Names:
+
+- Alert
+- Case
+- Transaction
+- Customer
+- Account
+- Rule
+- Scenario
+- Investigation
+- SAR
+- CTR
+- SuspiciousActivity
+- RiskScore
+- Pattern
+- Anomaly
+- Watchlist
+- PEP
+- Sanction
+- NetworkAnalysis
+- EntityLink
+- Disposition
+- Escalation
+- Report
+- AuditLog
+- FalsePositive
+- ModelTuning
+
+---
+
+### Source System: WLS
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | WLS |
+| **System Functionality** | Warehouse lending system managing mortgage warehouse lines of credit for mortgage banking operations. |
+| **Total Number of Tables** | 1 |
+
+#### Top 20-25 Key Entity Names:
+
+- WarehouseLine
+
+---
+
+### Source System: WLSBDDFI
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | WLSBDDFI |
+| **System Functionality** | Warehouse lending system business data for financial institution warehouse lending operations. |
+| **Total Number of Tables** | 27 |
+
+#### Top 20-25 Key Entity Names:
+
+- WarehouseLoan
+- Lender
+- Borrower
+- CreditLine
+- Advance
+- Repayment
+- Collateral
+- Mortgage
+- Investor
+- Purchase
+- Sale
+- Settlement
+- Interest
+- Fee
+- Covenant
+- Compliance
+- Reporting
+- Audit
+- RiskManagement
+- Exposure
+- Limit
+- Utilization
+- Margin
+- Default
+- Recovery
+
+---
+
+### Source System: Yodlee
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Consumer |
+| **Source System Name** | Yodlee |
+| **System Functionality** | Account aggregation and financial data platform connecting external accounts for consolidated financial view. |
+| **Total Number of Tables** | 9 |
+
+#### Top 20-25 Key Entity Names:
+
+- Account
+- Institution
+- Transaction
+- Balance
+- User
+- Connection
+- Refresh
+- Category
+- Merchant

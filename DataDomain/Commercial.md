@@ -1,10 +1,97 @@
-# Business Unit: Commercial
+# Business Unit Analysis: Commercial
 
-## Source System Analysis
+## Source System Details
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|----------------------|
-| Commercial | Aspire (Leasing) | Equipment and asset leasing management system handling lease origination, servicing, and portfolio management. | • Lease<br>• Lessee<br>• Equipment<br>• Asset<br>• Contract<br>• Payment<br>• Schedule<br>• Invoice<br>• Vendor<br>• Residual<br>• Depreciation<br>• Insurance<br>• Maintenance<br>• Termination<br>• Renewal<br>• Amendment<br>• Collateral<br>• CreditApproval<br>• Billing<br>• Collection<br>• Portfolio<br>• RiskRating<br>• Delinquency<br>• Document<br>• Compliance | 17 |
-| Commercial | Cadence | Commercial lending platform managing loan origination, underwriting, servicing, and portfolio management for businesses. | • Loan<br>• Borrower<br>• Application<br>• Collateral<br>• Underwriting<br>• CreditAnalysis<br>• FinancialStatement<br>• Covenant<br>• Guarantor<br>• LoanProduct<br>• Payment<br>• Servicing<br>• Interest<br>• Fee<br>• Disbursement<br>• Amortization<br>• Delinquency<br>• Default<br>• Workout<br>• RiskRating<br>• Approval<br>• Document<br>• Relationship<br>• Portfolio<br>• Compliance | 81 |
-| Commercial | Epiq | Bankruptcy and claims management system processing legal cases, creditor claims, and recovery operations. | • Case<br>• Claim<br>• Creditor<br>• Debtor<br>• Asset<br>• Liability<br>• Payment<br>• Distribution<br>• Trustee<br>• Court<br>• Filing<br>• Document<br>• Hearing<br>• Order<br>• Schedule<br>• Objection<br>• Resolution<br>• Recovery<br>• Priority<br>• Status | 8 |
-| Commercial | Salesforce | Customer relationship management platform managing sales, accounts, opportunities, and customer interactions for commercial banking. | • Account<br>• Contact<br>• Opportunity<br>• Lead<br>• Case<br>• Campaign<br>• Activity<br>• Task<br>• Event<br>• Product<br>• Quote<br>• Contract<br>• Order<br>• Pipeline<br>• Forecast<br>• Territory<br>• Team<br>• Relationship<br>• Interaction<br>• Document<br>• Note<br>• Attachment<br>• Report<br>• Dashboard<br>• Workflow | 1773 |
+| Business Unit | Source System Name | System Functionality | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|
+| Commercial | Aspire (Leasing) | Equipment leasing management system for commercial lease origination, servicing, and portfolio management. | 17 |
+| Commercial | Cadence | Commercial banking platform for relationship management, credit analysis, and loan origination. | 81 |
+| Commercial | Epiq | Bankruptcy and restructuring management system for commercial loan workouts and legal proceedings. | 8 |
+| Commercial | Salesforce | Customer relationship management system for commercial banking sales, pipeline, and client engagement. | 1,773 |
+
+### Aspire (Leasing) - Top 20-25 Key Entity Names:
+
+- Lease
+- Lessee
+- Equipment
+- LeaseContract
+- Payment
+- Asset
+- Vendor
+- LeaseSchedule
+- Residual Value
+- Depreciation
+- MaintenanceAgreement
+- Insurance
+- LeaseTermination
+- LeaseRenewal
+- InvoiceBilling
+- CollateralManagement
+- LeaseAccounting
+
+### Cadence - Top 20-25 Key Entity Names:
+
+- CommercialLoan
+- Customer
+- Relationship
+- CreditFacility
+- Collateral
+- Covenant
+- FinancialStatement
+- CreditAnalysis
+- RiskRating
+- LoanOrigination
+- Commitment
+- DrawDown
+- Repayment
+- InterestAccrual
+- FeeStructure
+- Guarantor
+- LoanDocument
+- ComplianceCheck
+- LoanReview
+- Portfolio
+- Industry
+- BusinessSegment
+- RelationshipManager
+- CreditApproval
+- LoanServicing
+
+### Epiq - Top 20-25 Key Entity Names:
+
+- BankruptcyCase
+- Debtor
+- Creditor
+- Claim
+- Asset
+- Restructuring
+- CourtFiling
+- LegalProceeding
+
+### Salesforce - Top 20-25 Key Entity Names:
+
+- Account
+- Contact
+- Opportunity
+- Lead
+- Campaign
+- Case
+- Task
+- Event
+- Product
+- PriceBook
+- Quote
+- Contract
+- Order
+- Pipeline
+- SalesStage
+- Territory
+- Team
+- Activity
+- Note
+- Attachment
+- EmailMessage
+- Report
+- Dashboard
+- Forecast
+- RelationshipHierarchy

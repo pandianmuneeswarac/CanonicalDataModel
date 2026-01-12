@@ -1,110 +1,147 @@
 # Business Unit Analysis: Clearing
 
-## Source System Details
+## Business Unit: Clearing
 
-| Business Unit | Source System Name | System Functionality | Total Number of Tables |
-|--------------|-------------------|---------------------|------------------------|
-| Clearing | Clearing | Securities clearing and settlement platform for broker-dealer trade processing and custody services. | 1,391 |
-| Clearing | Cor Clearing | Core clearing system for trade execution, settlement, and back-office operations management. | 2,181 |
-| Clearing | DMClearing | Data management system for clearing operations, reconciliation, and regulatory reporting. | 13 |
-| Clearing | Jack Henry | Integrated banking platform for clearing operations, account management, and transaction processing. | 1,284 |
+---
 
-### Clearing - Top 20-25 Key Entity Names:
+### Source System: Clearing
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Clearing |
+| **Source System Name** | Clearing |
+| **System Functionality** | Manages securities clearing, trade settlement, custody services, and back-office operations for broker-dealers. |
+| **Total Number of Tables** | 1,391 |
+
+#### Top 20-25 Key Entity Names:
 
 - Trade
 - Settlement
 - Security
 - Account
-- Position
 - Client
 - BrokerDealer
-- ClearingMember
+- Position
 - Transaction
-- CustodyAccount
-- MarginRequirement
-- CollateralManagement
+- ClearingMember
+- Custodian
 - TradeConfirmation
 - SettlementInstruction
 - CashMovement
-- SecurityTransfer
+- SecurityMovement
+- Collateral
+- MarginRequirement
+- RegulatoryReport
+- FailedTrade
+- TradeCorrection
 - CorporateAction
 - Dividend
-- InterestAccrual
-- FailedTrade
-- Reconciliation
-- RegulatoryReport
-- FeeCalculation
+- Interest
+- Fee
+- Commission
 - NetSettlement
-- Counterparty
 
-### Cor Clearing - Top 20-25 Key Entity Names:
+---
 
-- TradeOrder
-- Execution
+### Source System: Cor Clearing
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Clearing |
+| **Source System Name** | Cor Clearing |
+| **System Functionality** | Core clearing platform managing trade processing, settlement cycles, risk management, and regulatory compliance. |
+| **Total Number of Tables** | 2,181 |
+
+#### Top 20-25 Key Entity Names:
+
+- Trade
 - Settlement
-- ClearingAccount
-- Position
+- Account
 - Client
 - Security
-- MarginCall
-- CollateralPosting
-- RiskExposure
-- TradeCapture
+- Position
+- Transaction
+- ClearingFirm
+- Participant
+- TradeExecution
 - SettlementCycle
 - CashBalance
-- SecurityHolding
-- TradeAllocation
-- BackOfficeOperation
-- TradeConfirmation
-- SettlementStatus
+- SecurityBalance
+- MarginCall
+- RiskExposure
+- CollateralManagement
+- NetObligations
 - FailManagement
-- CorporateActionProcessing
-- DividendProcessing
-- TaxWithholding
-- FeeStructure
-- CommissionCalculation
+- TradeAmendment
+- CorporateActionEvent
+- DividendPayment
+- InterestAccrual
+- FeeSchedule
+- CommissionStructure
 - RegulatoryFiling
 
-### DMClearing - Top 20-25 Key Entity Names:
+---
 
-- DataReconciliation
-- ClearingData
-- TradeData
-- SettlementData
-- PositionData
-- AccountData
-- RegulatoryReport
-- DataQualityRule
-- ReconciliationBreak
-- DataValidation
-- AuditTrail
-- DataLineage
-- ReportingMetric
+### Source System: DMClearing
 
-### Jack Henry - Top 20-25 Key Entity Names:
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Clearing |
+| **Source System Name** | DMClearing |
+| **System Functionality** | Data mart for clearing analytics, reporting, business intelligence, and historical clearing data. |
+| **Total Number of Tables** | 13 |
 
-- Account
+#### Top 20-25 Key Entity Names:
+
+- TradeFact
+- SettlementFact
+- AccountDimension
+- SecurityDimension
+- TimeDimension
+- ClientDimension
+- PositionSnapshot
+- VolumeMetric
+- RevenueMetric
+- FailRateMetric
+- SettlementEfficiency
+- RiskMetric
+- PerformanceIndicator
+
+---
+
+### Source System: Jack Henry
+
+| Attribute | Details |
+|-----------|----------|
+| **Business Unit Name** | Clearing |
+| **Source System Name** | Jack Henry |
+| **System Functionality** | Core banking platform supporting clearing operations, account management, transaction processing, and customer services. |
+| **Total Number of Tables** | 1,284 |
+
+#### Top 20-25 Key Entity Names:
+
 - Customer
+- Account
 - Transaction
-- ClearingTransaction
-- AccountBalance
 - Product
 - Service
-- Fee
-- InterestCalculation
-- Statement
-- Payment
-- Transfer
-- ACHTransaction
-- WireTransfer
-- CheckProcessing
-- DepositAccount
-- LoanAccount
 - Branch
 - Relationship
 - AccountHolder
-- TransactionHistory
-- BalanceInquiry
-- AccountMaintenance
-- RegulatoryCompliance
-- AuditLog
+- Deposit
+- Withdrawal
+- Transfer
+- Payment
+- Fee
+- Interest
+- Statement
+- Card
+- Loan
+- CreditLine
+- CollateralAccount
+- SweepAccount
+- AutomatedClearing
+- WireTransfer
+- ACHTransaction
+- CheckProcessing
+- ElectronicBanking

@@ -1,12 +1,129 @@
-# Business Unit: Marketing
+# Business Unit Analysis: Marketing
 
-## Source System Analysis
+## Source System Details
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|----------------------|
-| Marketing | ACX | Automated customer experience platform managing personalized interactions, journeys, and customer engagement campaigns. | • Customer<br>• Journey<br>• Touchpoint<br>• Interaction<br>• Campaign<br>• Segment<br>• Message<br>• Channel<br>• Event<br>• Trigger<br>• Action<br>• Response<br>• Engagement<br>• Conversion<br>• Attribution<br>• Personalization<br>• Content<br>• Offer<br>• Analytics<br>• Performance | 15 |
-| Marketing | Datamyx | Marketing data management platform consolidating customer data, analytics, and insights for marketing operations. | • Customer<br>• Data<br>• Segment<br>• Campaign<br>• Channel<br>• Interaction<br>• Response<br>• Conversion<br>• Attribution<br>• Metric<br>• KPI<br>• Dashboard<br>• Report<br>• Analysis<br>• Model<br>• Prediction<br>• Score<br>• Integration<br>• DataQuality<br>• Lineage | 18 |
-| Marketing | DNC | Do Not Call registry managing customer communication preferences and regulatory compliance for marketing contacts. | • Customer<br>• PhoneNumber<br>• Preference<br>• OptOut<br>• OptIn<br>• Consent<br>• Registry<br>• Compliance<br>• Regulation<br>• Suppression<br>• Campaign<br>• Contact<br>• Channel<br>• Status<br>• Date<br>• Reason<br>• Validation<br>• AuditLog<br>• Report<br>• Exception | 1 |
-| Marketing | GA4 | Google Analytics 4 platform tracking website analytics, user behavior, conversions, and digital marketing performance. | • Event<br>• User<br>• Session<br>• Page<br>• Conversion<br>• Goal<br>• Funnel<br>• Source<br>• Medium<br>• Campaign<br>• Channel<br>• Device<br>• Location<br>• Behavior<br>• Engagement<br>• Metric<br>• Dimension<br>• Audience<br>• Segment<br>• Attribution<br>• Ecommerce<br>• Transaction<br>• Product<br>• Revenue<br>• Report | 34 |
-| Marketing | Interaction Studio | Real-time interaction management platform delivering personalized experiences across channels based on customer behavior. | • Visitor<br>• Session<br>• Interaction<br>• Event<br>• Behavior<br>• Segment<br>• Campaign<br>• Experience<br>• Content<br>• Offer<br>• Recommendation<br>• Personalization<br>• Rule<br>• Template<br>• Channel<br>• Touchpoint<br>• Engagement<br>• Conversion<br>• Attribution<br>• Analytics<br>• RealTime<br>• Profile<br>• Preference<br>• Context<br>• Response | 121 |
-| Marketing | MarketingCloud | Marketing automation platform managing email campaigns, customer journeys, segmentation, and multi-channel marketing. | • Contact<br>• Subscriber<br>• List<br>• Segment<br>• Campaign<br>• Journey<br>• Email<br>• SMS<br>• Push<br>• Content<br>• Template<br>• Send<br>• Delivery<br>• Open<br>• Click<br>• Conversion<br>• Unsubscribe<br>• Bounce<br>• Engagement<br>• Automation<br>• Trigger<br>• Event<br>• Report<br>• Analytics<br>• Integration | 15 |
+| Business Unit | Source System Name | System Functionality | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|
+| Marketing | ACX | Automated customer experience platform for personalized marketing campaigns and customer engagement. | 15 |
+| Marketing | Datamyx | Marketing data analytics platform for campaign performance analysis and customer insights. | 18 |
+| Marketing | DNC | Do Not Call registry management system for compliance with telemarketing regulations. | 1 |
+| Marketing | GA4 | Google Analytics 4 for digital marketing analytics, web tracking, and customer behavior analysis. | 34 |
+| Marketing | Interaction Studio | Real-time personalization platform for customer journey orchestration and engagement optimization. | 121 |
+| Marketing | MarketingCloud | Marketing automation platform for email campaigns, customer segmentation, and multi-channel marketing. | 15 |
+
+### ACX - Top 20-25 Key Entity Names:
+
+- Customer
+- Campaign
+- Interaction
+- Journey
+- Touchpoint
+- Engagement
+- Personalization
+- Segment
+- Message
+- Channel
+- Response
+- Conversion
+- Experience
+- ContentAsset
+- AutomationRule
+
+### Datamyx - Top 20-25 Key Entity Names:
+
+- Campaign
+- Customer
+- MarketingMetric
+- CampaignPerformance
+- ChannelAnalytics
+- CustomerSegment
+- ROIAnalysis
+- ConversionMetric
+- EngagementScore
+- AttributionModel
+- MarketingSpend
+- CampaignROI
+- CustomerAcquisitionCost
+- LifetimeValue
+- ChurnAnalysis
+- SegmentPerformance
+- ChannelEffectiveness
+- CampaignComparison
+
+### DNC - Top 20-25 Key Entity Names:
+
+- DoNotCallRecord
+
+### GA4 - Top 20-25 Key Entity Names:
+
+- Event
+- User
+- Session
+- PageView
+- Conversion
+- UserProperty
+- EventParameter
+- AudienceSegment
+- TrafficSource
+- Campaign
+- Goal
+- Ecommerce Transaction
+- UserEngagement
+- BehaviorFlow
+- Funnel
+- Retention
+- Cohort
+- CustomDimension
+- CustomMetric
+- DataStream
+- MeasurementProtocol
+- ConversionPath
+- Attribution
+- UserJourney
+- AnalyticsReport
+
+### Interaction Studio - Top 20-25 Key Entity Names:
+
+- Customer
+- Interaction
+- Experience
+- Journey
+- Touchpoint
+- Personalization
+- Recommendation
+- Segment
+- Campaign
+- Content
+- Action
+- Event
+- Behavior
+- Profile
+- Affinity
+- Intent
+- Engagement
+- Channel
+- Message
+- Offer
+- A/BTest
+- DecisionRule
+- RealTimeDecision
+- CustomerContext
+- InteractionHistory
+
+### MarketingCloud - Top 20-25 Key Entity Names:
+
+- Campaign
+- EmailCampaign
+- Customer
+- Subscriber
+- EmailTemplate
+- Journey
+- Automation
+- Segment
+- DataExtension
+- SendLog
+- OpenRate
+- ClickRate
+- BounceRate
+- UnsubscribeRate
+- ConversionTracking

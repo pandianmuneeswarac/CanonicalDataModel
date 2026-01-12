@@ -1,29 +1,467 @@
-# Business Unit: COE
+# Business Unit Analysis: COE
 
-## Source System Analysis
+## Source System Details
 
-| Business Unit | Source System Name | System Functionality | Top 20-25 Key Entity Names | Total Number of Tables |
-|--------------|-------------------|---------------------|---------------------------|----------------------|
-| COE | AD | Active Directory managing user authentication, authorization, groups, and organizational structure for enterprise access. | • User<br>• Group<br>• OrganizationalUnit<br>• Domain<br>• SecurityPolicy<br>• Permission<br>• Role<br>• Authentication<br>• Authorization<br>• Computer<br>• Service<br>• GroupMembership<br>• UserAttribute<br>• PasswordPolicy<br>• AccessControl<br>• DirectoryObject<br>• Schema<br>• Replication<br>• TrustRelationship<br>• Certificate | 12 |
-| COE | AdminPortal | Administrative portal for system configuration, user management, and operational administration across enterprise applications. | • User<br>• Role<br>• Permission<br>• Configuration<br>• Application<br>• Module<br>• Feature<br>• AccessControl<br>• AuditLog<br>• Setting<br>• Workflow<br>• Notification<br>• Dashboard<br>• Report<br>• Alert<br>• Task<br>• Schedule<br>• Policy<br>• Template<br>• Session | 2 |
-| COE | ADO | Azure DevOps managing software development lifecycle, source control, CI/CD pipelines, and project management. | • Project<br>• Repository<br>• Branch<br>• Commit<br>• PullRequest<br>• Build<br>• Release<br>• Pipeline<br>• WorkItem<br>• Sprint<br>• Backlog<br>• Task<br>• Bug<br>• TestCase<br>• Artifact<br>• Deployment<br>• Environment<br>• ServiceConnection<br>• VariableGroup<br>• Agent | 0 |
-| COE | Archive | Data archival system managing historical data retention, storage, retrieval, and compliance for regulatory requirements. | • ArchivedRecord<br>• Document<br>• Metadata<br>• RetentionPolicy<br>• ArchiveJob<br>• StorageLocation<br>• DataClassification<br>• AccessLog<br>• RetrievalRequest<br>• ComplianceRule<br>• DataLifecycle<br>• ArchiveIndex<br>• Version<br>• Checksum<br>• EncryptionKey<br>• AuditTrail<br>• DisposalSchedule<br>• LegalHold<br>• RestorePoint<br>• BackupSet | 1000 |
-| COE | DataMart | Departmental data warehouse providing subject-oriented data for analytics, reporting, and business intelligence needs. | • Dimension<br>• Fact<br>• Measure<br>• Hierarchy<br>• DataModel<br>• ETLProcess<br>• DataSource<br>• BusinessMetric<br>• Report<br>• Dashboard<br>• Query<br>• DataQuality<br>• Aggregation<br>• Partition<br>• Index<br>• Metadata<br>• DataLineage<br>• RefreshSchedule<br>• UserAccess<br>• PerformanceMetric | 20 |
-| COE | Decisions | Decision management system automating business rules, workflows, and decisioning logic for operational processes. | • DecisionRule<br>• BusinessRule<br>• Workflow<br>• Process<br>• Condition<br>• Action<br>• RuleSet<br>• DecisionTable<br>• Variable<br>• Expression<br>• Event<br>• Trigger<br>• Validation<br>• Calculation<br>• Routing<br>• Approval<br>• Exception<br>• AuditLog<br>• Version<br>• TestCase | 18 |
-| COE | DocuSign | Electronic signature platform managing document signing, workflows, templates, and digital agreement lifecycle management. | • Envelope<br>• Document<br>• Recipient<br>• Signer<br>• Template<br>• Workflow<br>• Signature<br>• Field<br>• Tab<br>• Authentication<br>• Certificate<br>• AuditTrail<br>• Status<br>• Notification<br>• Reminder<br>• Expiration<br>• CustomField<br>• Brand<br>• Account<br>• User | 3 |
-| COE | DWSupport | Data warehouse support system providing operational metadata, monitoring, troubleshooting, and maintenance for data warehouse. | • ETLJob<br>• DataLoad<br>• ErrorLog<br>• PerformanceMetric<br>• JobSchedule<br>• DataQuality<br>• Monitoring<br>• Alert<br>• Incident<br>• Resolution<br>• Configuration<br>• Dependency<br>• Lineage<br>• Metadata<br>• AuditLog<br>• Backup<br>• Recovery<br>• Optimization<br>• Partition<br>• Index<br>• Statistics<br>• Maintenance<br>• Troubleshooting<br>• Documentation<br>• SupportTicket | 1679 |
-| COE | EnterpriseBI | Enterprise business intelligence platform delivering analytics, reporting, dashboards, and insights across organization. | • Report<br>• Dashboard<br>• Dataset<br>• DataSource<br>• Visualization<br>• Metric<br>• KPI<br>• Dimension<br>• Measure<br>• Filter<br>• Parameter<br>• Subscription<br>• Schedule<br>• User<br>• Workspace<br>• Folder<br>• Permission<br>• Gateway<br>• Refresh<br>• Alert<br>• Bookmark<br>• Theme<br>• Template<br>• Export<br>• AuditLog | 91 |
-| COE | ETL | Extract Transform Load platform orchestrating data integration, transformation, and movement across enterprise systems. | • ETLJob<br>• DataSource<br>• DataTarget<br>• Transformation<br>• Mapping<br>• Workflow<br>• Schedule<br>• Package<br>• Connection<br>• Parameter<br>• Variable<br>• ErrorHandling<br>• Logging<br>• Execution<br>• Dependency<br>• DataQuality<br>• Validation<br>• Lookup<br>• Aggregation<br>• Join | 20 |
-| COE | Evo | Evolution platform managing system evolution, change management, version control, and configuration for applications. | • Version<br>• Release<br>• Change<br>• Configuration<br>• Component<br>• Dependency<br>• Deployment<br>• Environment<br>• Build<br>• Artifact<br>• ChangeRequest<br>• Approval<br>• Testing<br>• Rollback<br>• Baseline<br>• Patch<br>• Update<br>• Migration<br>• Impact<br>• Documentation | 6 |
-| COE | ExcelETL | Excel-based ETL solution processing spreadsheet data extraction, transformation, and loading for business applications. | • Workbook<br>• Worksheet<br>• DataRange<br>• Column<br>• Row<br>• Cell<br>• Formula<br>• Mapping<br>• Transformation<br>• ValidationRule<br>• DataType<br>• Format<br>• Template<br>• Schedule<br>• ErrorLog<br>• ProcessLog<br>• Configuration<br>• DataSource<br>• DataTarget<br>• RefreshJob | 359 |
-| COE | ExcelFile – Essentia | Essential Excel file management system handling spreadsheet storage, versioning, and metadata for business data. | • File<br>• Workbook<br>• Worksheet<br>• Metadata<br>• Version<br>• Owner<br>• Permission<br>• Category<br>• Tag<br>• Location<br>• Template<br>• Format<br>• Size<br>• ModificationDate<br>• AccessLog<br>• Validation<br>• DataQuality<br>• Relationship<br>• Dependency<br>• Archive | 2 |
-| COE | Five9 | Cloud contact center platform managing customer interactions, call routing, agent performance, and service analytics. | • Call<br>• Agent<br>• Campaign<br>• Queue<br>• Skill<br>• Disposition<br>• Customer<br>• Interaction<br>• Recording<br>• Schedule<br>• Performance<br>• Metric<br>• Report<br>• Script<br>• IVR<br>• Transfer<br>• Conference<br>• Voicemail<br>• SMS<br>• Email<br>• Chat<br>• Survey<br>• Quality<br>• Compliance<br>• Integration | 32 |
-| COE | FraudLinks | Fraud detection and prevention system analyzing patterns, links, and relationships to identify fraudulent activities. | • FraudCase<br>• Alert<br>• Transaction<br>• Customer<br>• Account<br>• Pattern<br>• Rule<br>• Score<br>• Investigation<br>• Evidence<br>• Link<br>• Network<br>• Relationship<br>• Behavior<br>• Anomaly<br>• RiskFactor<br>• Disposition<br>• Action<br>• Report<br>• AuditTrail | 8 |
-| COE | Intranet | Internal corporate portal providing employee resources, communication, collaboration, and information sharing platform. | • Page<br>• Content<br>• Document<br>• News<br>• Announcement<br>• Department<br>• Employee<br>• Team<br>• Site<br>• Navigation<br>• Search<br>• Permission<br>• Workflow<br>• Comment<br>• Like<br>• Tag<br>• Category<br>• Calendar<br>• Event<br>• Poll<br>• Forum<br>• Wiki<br>• Link<br>• Notification<br>• Analytics | 82 |
-| COE | Outsystems | Low-code application development platform building, deploying, and managing enterprise web and mobile applications. | • Application<br>• Module<br>• Screen<br>• Entity<br>• Attribute<br>• Action<br>• Process<br>• Integration<br>• API<br>• User<br>• Role<br>• Theme<br>• Widget<br>• Block<br>• Structure<br>• Logic<br>• Query<br>• Aggregate<br>• Resource<br>• Extension<br>• Environment<br>• Version<br>• Deployment<br>• Log<br>• Performance | 434 |
-| COE | OSPRDI | OutSystems Production Reporting and Data Integration managing operational data, reporting, and integration workflows. | • Report<br>• Dataset<br>• DataSource<br>• Integration<br>• Schedule<br>• Execution<br>• Parameter<br>• Filter<br>• Metric<br>• Dashboard<br>• Alert<br>• Subscription<br>• Export<br>• Format<br>• Template<br>• Configuration<br>• Log<br>• Error<br>• Performance<br>• User<br>• Permission<br>• Workflow<br>• Notification<br>• Archive<br>• AuditTrail | 57 |
-| COE | ReportServer | Centralized reporting server managing report generation, distribution, scheduling, and delivery across enterprise. | • Report<br>• Subscription<br>• Schedule<br>• Execution<br>• Parameter<br>• DataSource<br>• Dataset<br>• User<br>• Folder<br>• Permission<br>• Snapshot<br>• History<br>• Cache<br>• Delivery<br>• Format<br>• Export<br>• Email<br>• FileShare<br>• Log<br>• Performance<br>• Configuration<br>• Catalog<br>• Dependency<br>• Version<br>• AuditTrail | 72 |
-| COE | SharePoint | Collaboration platform managing documents, sites, lists, workflows, and team collaboration for enterprise content. | • Site<br>• Library<br>• List<br>• Document<br>• Folder<br>• Item<br>• Page<br>• User<br>• Group<br>• Permission<br>• Workflow<br>• ContentType<br>• Column<br>• View<br>• Version<br>• Metadata<br>• Search<br>• Navigation<br>• WebPart<br>• Template<br>• Feature<br>• Solution<br>• App<br>• Hub<br>• Term | 179 |
-| COE | Snow | Software asset management platform tracking licenses, usage, compliance, and optimization for IT assets. | • Asset<br>• License<br>• Software<br>• Computer<br>• User<br>• Installation<br>• Usage<br>• Compliance<br>• Contract<br>• Vendor<br>• Product<br>• Version<br>• Entitlement<br>• Allocation<br>• Cost<br>• Optimization<br>• Audit<br>• Report<br>• Alert<br>• Reclamation | 5 |
-| COE | SYNRGVD01 | Synergy virtual desktop infrastructure managing virtual machines, sessions, resources, and remote access infrastructure. | • VirtualMachine<br>• Session<br>• User<br>• Desktop<br>• Application<br>• Resource<br>• Host<br>• Pool<br>• Image<br>• Profile<br>• Policy<br>• Connection<br>• Performance<br>• Capacity<br>• License<br>• Storage<br>• Network<br>• Security<br>• Monitoring<br>• Log | 21 |
-| COE | WS repo | Web services repository managing API definitions, service contracts, endpoints, and integration specifications. | • Service<br>• Endpoint<br>• Operation<br>• Contract<br>• Schema<br>• Message<br>• Binding<br>• Policy<br>• Version<br>• Documentation<br>• Consumer<br>• Provider<br>• Security<br>• Authentication<br>• Authorization<br>• Monitoring<br>• Log<br>• Performance<br>• SLA<br>• Dependency | 6 |
+| Business Unit | Source System Name | System Functionality | Total Number of Tables |
+|--------------|-------------------|---------------------|------------------------|
+| COE | AD | Active Directory for user authentication, access control, and identity management. | 12 |
+| COE | AdminPortal | Administrative portal for system configuration, user management, and operational controls. | 2 |
+| COE | ADO | Azure DevOps for software development, version control, and project management. | 0 |
+| COE | Archive | Data archival system for long-term storage, compliance, and historical data retention. | 1,000 |
+| COE | DataMart | Data warehouse for analytical reporting, business intelligence, and decision support. | 20 |
+| COE | Decisions | Business rules engine for automated decision-making, workflow management, and process automation. | 18 |
+| COE | DocuSign | Electronic signature platform for document management, contract execution, and digital workflows. | 3 |
+| COE | DWSupport | Data warehouse support system for ETL processes, data quality, and metadata management. | 1,679 |
+| COE | EnterpriseBI | Enterprise business intelligence platform for reporting, dashboards, and analytics. | 91 |
+| COE | ETL | Extract, transform, load system for data integration, migration, and transformation. | 20 |
+| COE | Evo | Evolution platform for application development, system integration, and process automation. | 6 |
+| COE | ExcelETL | Excel-based ETL tool for data extraction, transformation, and loading operations. | 359 |
+| COE | ExcelFile – Essentia | Excel file management system for essential data processing and reporting. | 2 |
+| COE | Five9 | Cloud contact center platform for customer service, call routing, and interaction management. | 32 |
+| COE | FraudLinks | Fraud detection system for transaction monitoring, risk assessment, and suspicious activity alerts. | 8 |
+| COE | Intranet | Internal portal for employee communication, document sharing, and collaboration. | 82 |
+| COE | Outsystems | Low-code development platform for rapid application development and digital transformation. | 434 |
+| COE | OSPRDI | OutSystems production environment for enterprise applications and system integration. | 57 |
+| COE | ReportServer | Reporting server for scheduled reports, ad-hoc queries, and data distribution. | 72 |
+| COE | SharePoint | Collaboration platform for document management, team sites, and content sharing. | 179 |
+| COE | Snow | IT asset management system for software licensing, hardware inventory, and compliance tracking. | 5 |
+| COE | SYNRGVD01 | Synergy virtual desktop infrastructure for remote access and virtualized computing. | 21 |
+| COE | WS repo | Web services repository for API management, service catalog, and integration endpoints. | 6 |
+
+### AD - Top 20-25 Key Entity Names:
+
+- User
+- Group
+- OrganizationalUnit
+- Domain
+- AccessControl
+- Permission
+- Role
+- Authentication
+- UserProfile
+- SecurityPolicy
+- GroupMembership
+- DirectoryObject
+
+### AdminPortal - Top 20-25 Key Entity Names:
+
+- Administrator
+- Configuration
+
+### Archive - Top 20-25 Key Entity Names:
+
+- ArchivedRecord
+- Document
+- Transaction
+- Account
+- Customer
+- RetentionPolicy
+- ArchiveJob
+- StorageLocation
+- DataClassification
+- ComplianceRule
+- ArchiveIndex
+- RetrievalRequest
+- AuditLog
+- DataLifecycle
+- LegalHold
+- DispositionSchedule
+- ArchiveMetadata
+- VersionHistory
+- AccessLog
+- RestoreRequest
+- DataIntegrity
+- EncryptionKey
+- BackupCopy
+- RetentionPeriod
+- ArchiveStatus
+
+### DataMart - Top 20-25 Key Entity Names:
+
+- Fact
+- Dimension
+- Measure
+- DimensionHierarchy
+- AggregateTable
+- DataCube
+- TimeDimension
+- CustomerDimension
+- ProductDimension
+- GeographyDimension
+- FactTransaction
+- FactBalance
+- MetricDefinition
+- KPI
+- Dashboard
+- Report
+- DataModel
+- ETLProcess
+- DataQuality
+- BusinessRule
+
+### Decisions - Top 20-25 Key Entity Names:
+
+- DecisionRule
+- BusinessRule
+- Workflow
+- Process
+- Task
+- Condition
+- Action
+- RuleSet
+- DecisionTable
+- ProcessInstance
+- WorkflowStep
+- Approval
+- Escalation
+- RuleExecution
+- DecisionOutcome
+- ProcessVariable
+- RuleVersion
+- DecisionLog
+
+### DocuSign - Top 20-25 Key Entity Names:
+
+- Envelope
+- Document
+- Signer
+
+### DWSupport - Top 20-25 Key Entity Names:
+
+- DataSource
+- ETLJob
+- DataTransformation
+- DataQualityRule
+- Metadata
+- DataLineage
+- SourceTable
+- TargetTable
+- TransformationLogic
+- DataMapping
+- ValidationRule
+- ErrorLog
+- JobSchedule
+- DataLoad
+- IncrementalLoad
+- FullLoad
+- StagingTable
+- DataProfiling
+- DataCleansing
+- DataStandardization
+- ReferenceData
+- BusinessGlossary
+- DataDictionary
+- ChangeDataCapture
+- DataGovernance
+
+### EnterpriseBI - Top 20-25 Key Entity Names:
+
+- Report
+- Dashboard
+- Dataset
+- Visualization
+- Metric
+- KPI
+- Dimension
+- Measure
+- ReportParameter
+- DataSource
+- ReportSchedule
+- Subscription
+- User
+- UserGroup
+- Permission
+- Folder
+- ReportTemplate
+- ChartType
+- Filter
+- DrillDown
+- ReportExecution
+- CachedData
+- ReportHistory
+- AlertRule
+- AnalyticsModel
+
+### ETL - Top 20-25 Key Entity Names:
+
+- ETLJob
+- DataSource
+- DataTarget
+- Transformation
+- DataMapping
+- ValidationRule
+- ErrorHandling
+- JobSchedule
+- DataFlow
+- LoadStrategy
+- DataExtract
+- DataTransform
+- DataLoad
+- JobLog
+- DataQuality
+- SourceConnection
+- TargetConnection
+- TransformationRule
+- JobDependency
+- ExecutionStatus
+
+### Evo - Top 20-25 Key Entity Names:
+
+- Application
+- Module
+- Integration
+- Workflow
+- Configuration
+- Process
+
+### ExcelETL - Top 20-25 Key Entity Names:
+
+- ExcelFile
+- Worksheet
+- DataRange
+- Column
+- Row
+- DataMapping
+- TransformationRule
+- ValidationRule
+- SourceFile
+- TargetTable
+- FileTemplate
+- DataExtraction
+- DataTransformation
+- DataLoad
+- ErrorLog
+- FileSchedule
+- FileArchive
+- DataValidation
+- FormulaMapping
+- LookupTable
+- ReferenceData
+- FileMetadata
+- LoadHistory
+- DataQualityCheck
+- FileProcessing
+
+### ExcelFile – Essentia - Top 20-25 Key Entity Names:
+
+- ExcelFile
+- DataSheet
+
+### Five9 - Top 20-25 Key Entity Names:
+
+- Call
+- Agent
+- Campaign
+- Queue
+- Customer
+- Interaction
+- CallRecording
+- CallDisposition
+- SkillSet
+- Schedule
+- PerformanceMetric
+- CallScript
+- IVRFlow
+- CallRouting
+- AgentStatus
+- CallLog
+- QualityScore
+- ServiceLevel
+- AbandonRate
+- WaitTime
+- CallTransfer
+- Conference
+- Voicemail
+- ChatInteraction
+- EmailInteraction
+
+### FraudLinks - Top 20-25 Key Entity Names:
+
+- FraudAlert
+- Transaction
+- RiskScore
+- SuspiciousActivity
+- FraudRule
+- Investigation
+- Case
+- FraudPattern
+
+### Intranet - Top 20-25 Key Entity Names:
+
+- Page
+- Document
+- News
+- Announcement
+- Employee
+- Department
+- Team
+- Forum
+- Discussion
+- Comment
+- File
+- Folder
+- Link
+- Calendar
+- Event
+- Policy
+- Procedure
+- Form
+- Workflow
+- Approval
+- Notification
+- Search
+- Tag
+- Category
+- UserProfile
+
+### Outsystems - Top 20-25 Key Entity Names:
+
+- Application
+- Module
+- Entity
+- Screen
+- Action
+- Process
+- Integration
+- WebService
+- Database
+- User
+- Role
+- Permission
+- Theme
+- Widget
+- Timer
+- EmailTemplate
+- SiteProperty
+- SystemLog
+- Deployment
+- Version
+- Environment
+- Dependency
+- Reference
+- Extension
+- APIEndpoint
+
+### OSPRDI - Top 20-25 Key Entity Names:
+
+- Application
+- Module
+- Entity
+- Process
+- Integration
+- WebService
+- Database
+- User
+- Role
+- Configuration
+- Deployment
+- Environment
+- APIEndpoint
+- DataModel
+- BusinessLogic
+- Screen
+- Action
+- Timer
+- EmailTemplate
+- SystemLog
+- Version
+- Dependency
+- Extension
+- SiteProperty
+- SecurityPolicy
+
+### ReportServer - Top 20-25 Key Entity Names:
+
+- Report
+- ReportDefinition
+- Schedule
+- Subscription
+- DataSource
+- Dataset
+- Parameter
+- ReportExecution
+- ReportHistory
+- User
+- Folder
+- Permission
+- ReportSnapshot
+- CachedReport
+- ReportLog
+- DeliveryChannel
+- EmailDistribution
+- FileExport
+- ReportFormat
+- ReportTemplate
+- DataConnection
+- ReportFilter
+- ReportGroup
+- ExecutionLog
+- ErrorLog
+
+### SharePoint - Top 20-25 Key Entity Names:
+
+- Site
+- Library
+- List
+- Document
+- Folder
+- Item
+- User
+- Group
+- Permission
+- Workflow
+- ContentType
+- Column
+- View
+- Page
+- WebPart
+- Version
+- CheckOut
+- Approval
+- Metadata
+- Tag
+- Search
+- Navigation
+- SiteCollection
+- Subsite
+- RecycleBin
+
+### Snow - Top 20-25 Key Entity Names:
+
+- Asset
+- Software
+- License
+- Hardware
+- Inventory
+
+### SYNRGVD01 - Top 20-25 Key Entity Names:
+
+- VirtualDesktop
+- User
+- Session
+- Application
+- Resource
+- AccessPolicy
+- Desktop Pool
+- Connection
+- Performance
+- Storage
+- Network
+- SecurityGroup
+- Configuration
+- Deployment
+- License
+- Monitoring
+- EventLog
+- UserProfile
+- ApplicationDelivery
+- LoadBalancing
+
+### WS repo - Top 20-25 Key Entity Names:
+
+- WebService
+- API
+- Endpoint
+- ServiceContract
+- Operation
+- Message
